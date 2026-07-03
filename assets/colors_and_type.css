@@ -1,0 +1,210 @@
+/* ============================================================
+   PORTFOLIO DESIGN SYSTEM — colors_and_type.css
+   Foundations: color, typography, spacing, radius, shadow, motion
+   Fonts: Poppins (headings) + Roboto (body) via Google Fonts CDN
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+  /* ---------- COLOR · Primary Blues ---------- */
+  --color-navy:       #1B2B3B; /* Deep navy — darkest surfaces, hero bg */
+  --color-slate:      #2E4057; /* Slate blue — cards, sidebars */
+  --color-mid-blue:   #3D5A73; /* Mid blue — section dividers, borders */
+  --color-sky:        #5B8FA8; /* Sky blue — links, interactive elements */
+  --color-mist:       #A8C4D4; /* Mist — subtle accents, icon fills */
+  --color-pale-blue:  #E8F1F5; /* Pale blue — light backgrounds, hover states */
+
+  /* ---------- COLOR · Accent Greens ---------- */
+  --color-teal:       #2D6A5A; /* Deep teal — CTAs, badges, highlights */
+  --color-sage:       #4A8C76; /* Sage — secondary buttons, tags */
+  --color-mint:       #7DBFAA; /* Mint — hover states, progress bars */
+  --color-pale-green: #E4F2ED; /* Pale green — success states, bg tint */
+
+  /* ---------- COLOR · Neutrals ---------- */
+  --color-charcoal:   #1A1F24; /* Near-black — primary text */
+  --color-graphite:   #3C4550; /* Graphite — secondary text */
+  --color-stone:      #6B7885; /* Stone — captions, placeholders */
+  --color-silver:     #B0BAC4; /* Silver — borders, dividers */
+  --color-cloud:      #F2F5F7; /* Cloud — page background */
+  --color-white:      #FFFFFF; /* Pure white — cards */
+
+  /* ---------- SEMANTIC COLOR ROLES ---------- */
+  --fg-1:        var(--color-charcoal); /* primary text */
+  --fg-2:        var(--color-graphite); /* secondary text */
+  --fg-3:        var(--color-stone);    /* captions, placeholders */
+  --fg-on-dark:  var(--color-white);    /* text on navy/charcoal */
+  --fg-muted-on-dark: var(--color-mist);/* secondary text on dark */
+
+  --bg-page:     var(--color-cloud);    /* default page background */
+  --bg-surface:  var(--color-white);    /* cards, panels */
+  --bg-dark:     var(--color-navy);     /* hero, contact */
+  --bg-tint:     var(--color-pale-blue);/* subtle section tint */
+
+  --border-1:    var(--color-silver);   /* default borders, dividers */
+  --border-strong: var(--color-mid-blue);
+
+  --accent:      var(--color-teal);     /* primary CTA / brand accent */
+  --accent-hover:#235446;               /* teal darkened for hover */
+  --link:        var(--color-sky);      /* links */
+  --link-hover:  var(--color-teal);     /* link hover */
+
+  /* ---------- TYPOGRAPHY · Families ---------- */
+  --font-heading: 'Poppins', system-ui, sans-serif;
+  --font-body:    'Roboto', system-ui, sans-serif;
+
+  /* ---------- TYPOGRAPHY · Scale ---------- */
+  --text-xs:   0.75rem;   /* 12px — labels, captions */
+  --text-sm:   0.875rem;  /* 14px — metadata, tags */
+  --text-base: 1rem;      /* 16px — body copy */
+  --text-lg:   1.125rem;  /* 18px — lead paragraphs */
+  --text-xl:   1.25rem;   /* 20px — card headings */
+  --text-2xl:  1.5rem;    /* 24px — section subheadings */
+  --text-3xl:  1.875rem;  /* 30px — section headings */
+  --text-4xl:  2.25rem;   /* 36px — page titles */
+  --text-5xl:  3rem;      /* 48px — hero headline */
+  --text-6xl:  3.75rem;   /* 60px — hero display */
+
+  /* ---------- TYPOGRAPHY · Weights ---------- */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ---------- TYPOGRAPHY · Line heights ---------- */
+  --leading-tight:   1.2;
+  --leading-snug:    1.4;
+  --leading-normal:  1.6;
+  --leading-relaxed: 1.8;
+
+  /* ---------- TYPOGRAPHY · Letter spacing ---------- */
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide:   0.05em;
+
+  /* ---------- SPACING (8pt grid) ---------- */
+  --space-1:  0.25rem;  /* 4 */
+  --space-2:  0.5rem;   /* 8 */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.25rem;  /* 20 */
+  --space-6:  1.5rem;   /* 24 */
+  --space-8:  2rem;     /* 32 */
+  --space-10: 2.5rem;   /* 40 */
+  --space-12: 3rem;     /* 48 */
+  --space-16: 4rem;     /* 64 */
+  --space-20: 5rem;     /* 80 */
+  --space-24: 6rem;     /* 96 */
+
+  /* ---------- BORDER RADIUS ---------- */
+  --radius-sm:   4px;   /* tags, inputs */
+  --radius-md:   8px;   /* buttons */
+  --radius-lg:   10px;  /* cards */
+  --radius-xl:   16px;  /* modals, large panels */
+  --radius-full: 999px; /* pills, avatars */
+
+  /* ---------- SHADOWS ---------- */
+  --shadow-xs: 0 1px 3px rgba(27,43,59,0.06);
+  --shadow-sm: 0 2px 8px rgba(27,43,59,0.09);
+  --shadow-md: 0 4px 16px rgba(27,43,59,0.12);
+  --shadow-lg: 0 8px 32px rgba(27,43,59,0.16);
+  --shadow-xl: 0 16px 48px rgba(27,43,59,0.20);
+
+  /* ---------- MOTION ---------- */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* ---------- LAYOUT ---------- */
+  --max-content: 1200px;
+  --gutter: 1.5rem;
+}
+
+/* ============================================================
+   SEMANTIC TYPE STYLES — apply directly to elements
+   ============================================================ */
+
+.h-overline {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-mint);
+}
+
+.h-display {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-6xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-1);
+}
+
+.h1 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-5xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-1);
+}
+
+.h2 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-4xl);
+  line-height: var(--leading-tight);
+  color: var(--color-navy);
+}
+
+.h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-3xl);
+  line-height: var(--leading-snug);
+  color: var(--fg-1);
+}
+
+.h4 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-xl);
+  line-height: var(--leading-snug);
+  color: var(--color-charcoal);
+}
+
+.lead {
+  font-family: var(--font-body);
+  font-weight: var(--weight-light);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--fg-2);
+}
+
+.p {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--fg-2);
+  max-width: 65ch;
+}
+
+.caption {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-xs);
+  color: var(--fg-3);
+}
+
+.label {
+  font-family: var(--font-body);
+  font-weight: var(--weight-medium);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--fg-2);
+}

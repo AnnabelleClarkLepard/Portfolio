@@ -1,0 +1,20 @@
+{
+  "name": "annabelle-clark-lepard-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build tooling for the Mind Map Portfolio static site — precompiles JSX and vendors runtime deps locally.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "vendor": "node scripts/vendor.mjs",
+    "build-artifact": "node scripts/build-artifact.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/poppins": "^5.2.7",
+    "@fontsource/roboto": "^5.2.10",
+    "esbuild": "^0.24.0",
+    "lucide": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
