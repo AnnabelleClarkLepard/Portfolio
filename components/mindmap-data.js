@@ -1,12 +1,13 @@
 /* mindmap-data.js — spoke grouping + career history for the mind-map portfolio.
    Reuses window.PROFILE / PROJECTS / EXPERTISE / SKILLS from data.js. */
 
-// Four richer spokes that combine project categories with expertise focus.
+// Five recruiter-friendly spokes that organize the portfolio around product
+// strength areas and keep personal exploration in the same product story.
 window.SPOKES = [
   {
     id: 'financial',
     label: 'Financial Systems',
-    sub: 'Payments & Billing',
+    sub: 'Trust, accuracy & billing',
     icon: 'landmark',
     blurb: 'Statements, reconciliation, donations, and refunds — where accuracy, traceability, and reversibility are what build trust.',
     projectIds: ['merchant-statements', 'fundraising-payments'],
@@ -14,30 +15,39 @@ window.SPOKES = [
   },
   {
     id: 'registration',
-    label: 'High-Stakes UX',
-    sub: 'Registration & Security',
+    label: 'High-Stakes Journeys',
+    sub: 'Registration & security',
     icon: 'gauge',
-    blurb: 'High-volume, time-sensitive journeys — queueing, waitlists, and security recovery — kept calm and usable under pressure.',
+    blurb: 'High-volume, time-sensitive journeys — queueing, registration, and security recovery — kept calm and usable under pressure.',
     projectIds: ['queueing-system', 'registration-mobile', 'waitlist-decision', 'auth-security'],
     expertise: ['Performance & High-Stakes UX'],
   },
   {
     id: 'systems',
-    label: 'Client Operations',
-    sub: 'Communication & Workflow Management',
+    label: 'Operational Workflows',
+    sub: 'Client tools & staff operations',
     icon: 'megaphone',
-    blurb: 'The tools our clients rely on to manage hiring and communicate with the people they serve — fast, clear, and built for real workloads.',
+    blurb: 'The tools our clients rely on to manage hiring, communications, and service operations — clear, legible, and built for real workload.',
     projectIds: ['forms-strategy', 'outbox'],
     expertise: ['Client Communication & Workflow Tooling'],
   },
   {
-    id: 'practice',
-    label: 'Leadership',
-    sub: 'AI & Design Excellence',
-    icon: 'sparkles',
-    blurb: 'Reshaping how teams work and what they build on — leading AI adoption, grounding decisions in research, and raising the design bar.',
+    id: 'platform',
+    label: 'Product Platforms',
+    sub: 'Design systems & leadership',
+    icon: 'layout-grid',
+    blurb: 'Design systems, AI adoption, and research infrastructure — creating clarity, consistency, and a better delivery rhythm across product teams.',
     projectIds: ['design-system', 'ai-leadership', 'research-documentation'],
     expertise: ['AI Transformation Leadership', 'Accessible Design Systems', 'Research, Analysis & Documentation'],
+  },
+  {
+    id: 'personal',
+    label: 'Personal Projects',
+    sub: 'Product exploration',
+    icon: 'rocket',
+    blurb: 'Side projects that let me prototype product ideas quickly, focus on user value, and explore problems beyond the day job.',
+    projectIds: ['volleyball-lineup-planner'],
+    expertise: ['Product Design', 'Interaction Design', 'Prototyping'],
   },
 ];
 

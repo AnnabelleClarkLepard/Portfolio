@@ -4,8 +4,13 @@
    Reuses window.ProjectModal. */
 
 const MM_CSS = `
+  /* Rule: mobile screens must never rely on absolute coordinate overlap. Below 760px,
+     overview nodes revert to a stacked document flow so each card remains readable and separated. */
   .mm-stage{position:relative;width:100%;height:100vh;min-height:500px;overflow:hidden;
     background:var(--color-cloud);font-family:var(--font-body);}
+  .mm-stage.mobile-safe{overflow-y:auto;height:auto;min-height:100vh;padding:22px 18px 52px;}
+  .mm-overview-mobile{position:relative;display:flex;flex-direction:column;align-items:center;gap:16px;
+    width:min(100%, 420px);margin:0 auto;padding-top:55px;z-index:20;}
   .mm-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:5;}
   .mm-branch{stroke:var(--branch-aa);stroke-width:1.5;vector-effect:non-scaling-stroke;
     transition:stroke .4s ease,opacity .4s ease,stroke-width .4s ease;}
@@ -231,13 +236,28 @@ const MM_CSS = `
 `;
 
 function layoutPositions(layout) {
+  const baseTree = [{ x: 15, y: 58 }, { x: 35, y: 58 }, { x: 52, y: 26 }, { x: 68, y: 58 }, { x: 85, y: 58 }];
+  const baseConstellation = [{ x: 18, y: 24 }, { x: 82, y: 20 }, { x: 27, y: 78 }, { x: 72, y: 76 }, { x: 50, y: 18 }];
+  // Regular pentagon around the center so all overview nodes share
+  // the same radius and equal angular spacing.
+  const radialCenter = { x: 50, y: 50 };
+  const radialRadius = 33;
+  const radialAnglesDeg = [198, -18, 126, 54, -90];
+  const baseRadial = radialAnglesDeg.map((deg) => {
+    const radians = (deg * Math.PI) / 180;
+    return {
+      x: radialCenter.x + radialRadius * Math.cos(radians),
+      y: radialCenter.y + radialRadius * Math.sin(radians),
+    };
+  });
+
   if (layout === 'tree') {
-    return { center: { x: 50, y: 15 }, nodes: [{ x: 15, y: 60 }, { x: 38.3, y: 60 }, { x: 61.7, y: 60 }, { x: 85, y: 60 }] };
+    return { center: { x: 50, y: 18 }, nodes: baseTree };
   }
   if (layout === 'constellation') {
-    return { center: { x: 47, y: 49 }, nodes: [{ x: 18, y: 24 }, { x: 82, y: 20 }, { x: 27, y: 80 }, { x: 76, y: 74 }] };
+    return { center: { x: 47, y: 49 }, nodes: baseConstellation };
   }
-  return { center: { x: 50, y: 50 }, nodes: [{ x: 24, y: 28 }, { x: 76, y: 28 }, { x: 24, y: 72 }, { x: 76, y: 72 }] };
+  return { center: radialCenter, nodes: baseRadial };
 }
 
 // Rendered height of a .mm-cproj child card (thumb + body) at its fixed
@@ -383,11 +403,12 @@ function Branches({ pos, activeIdx, layout, drill, drillOrigin, drillChildren })
 
 }
 
-function CenterNode({ pos, dim, hidden, onAbout }) {
+function CenterNode({ pos, dim, hidden, onAbout, mobile }) {
   const P = window.PROFILE;
+  const centerStyle = mobile ? { left: 'auto', top: 'auto', transform: 'none', position: 'relative', margin: '0 auto', gap: '18px' } : { left: pos.center.x + '%', top: pos.center.y + '%', gap: '24px' };
   return (
     <div className={'mm-center' + (dim ? ' dim' : '') + (hidden ? ' hidden' : '')}
-    style={{ left: pos.center.x + '%', top: pos.center.y + '%', gap: '24px' }}
+    style={centerStyle}
     onClick={(e) => {e.stopPropagation();onAbout();}}
     role="button" tabIndex={0}
     onKeyDown={(e) => {if (e.key === 'Enter' || e.key === ' ') {e.preventDefault();onAbout();}}}>
@@ -406,12 +427,13 @@ function CenterNode({ pos, dim, hidden, onAbout }) {
 
 }
 
-function SpokeNode({ spoke, style, state, onClick, staticFlow }) {
+function SpokeNode({ spoke, style, state, onClick, staticFlow, mobile }) {
   const pc = spoke.projectIds.length;
   const meta = pc > 0 ? `${pc} project${pc > 1 ? 's' : ''}` : 'In progress';
+  const nodeStyle = mobile ? { position: 'relative', left: 'auto', top: 'auto', transform: 'none', width: 'min(320px, 86vw)', margin: '0 auto' } : style;
   return (
     <button className={'mm-node' + (staticFlow ? ' static' : '') + (state === 'active' ? ' active' : '') + (state === 'dim' ? ' dim' : '') + (state === 'hidden' ? ' hidden' : '')}
-    style={style} onClick={(e) => {e.stopPropagation();onClick();}}>
+    style={nodeStyle} onClick={(e) => {e.stopPropagation();onClick();}}>
       <div className="mm-node-ico"><i data-lucide={spoke.icon}></i></div>
       <h3>{spoke.label}<span className="mm-node-sub">{spoke.sub}</span></h3>
       <div className="mm-node-meta"><span className="dotb"></span>{meta}</div>
@@ -516,6 +538,7 @@ function MindMap({ layout, reveal, onAbout }) {
   const [active, setActive] = React.useState(null); // spoke id
   const [project, setProject] = React.useState(null);
   const { w: width, h: height } = useViewportSize();
+  const mobile = width <= 760;
   const pos = layoutPositions(layout);
   const spokes = window.SPOKES;
   const activeIdx = active ? spokes.findIndex((s) => s.id === active) : null;
@@ -543,10 +566,22 @@ function MindMap({ layout, reveal, onAbout }) {
   const close = () => setActive(null);
 
   return (
-    <div className="mm-stage" onClick={close}>
+    <div className={'mm-stage' + (mobile ? ' mobile-safe' : '')} onClick={close}>
       <style>{MM_CSS}</style>
 
-      {drilling ?
+      {mobile && !activeSpoke && (
+        <div className="mm-overview-mobile" onClick={(e) => e.stopPropagation()}>
+          <CenterNode pos={pos} onAbout={onAbout} mobile />
+          {spokes.map((s, i) => {
+            const state = 'idle';
+            return (
+              <SpokeNode key={s.id} spoke={s} state={state} mobile onClick={() => setActive(active === s.id ? null : s.id)} />
+            );
+          })}
+        </div>
+      )}
+
+      {!mobile && (drilling ?
       <button className="mm-back" onClick={(e) => {e.stopPropagation();close();}}>
           <i data-lucide="arrow-left"></i> All areas
         </button> :
@@ -555,20 +590,20 @@ function MindMap({ layout, reveal, onAbout }) {
           <div className="wm">{window.PROFILE.name}<i>.</i></div>
           <div className="ov">Product Designer · Portfolio</div>
         </div>
-      }
+      )}
 
-      <Branches pos={pos} activeIdx={activeIdx != null && activeIdx >= 0 ? activeIdx : null} layout={layout}
-      drill={drilling} drillOrigin={!narrowDrill && dl ? dl.origin : null} drillChildren={!narrowDrill && dl ? dl.children : null} />
+      {!mobile && <Branches pos={pos} activeIdx={activeIdx != null && activeIdx >= 0 ? activeIdx : null} layout={layout}
+      drill={drilling} drillOrigin={!narrowDrill && dl ? dl.origin : null} drillChildren={!narrowDrill && dl ? dl.children : null} />}
 
-      <CenterNode pos={pos} dim={mode === 'panel'} hidden={mode === 'expand'} onAbout={onAbout} />
+      {!mobile && <CenterNode pos={pos} dim={mode === 'panel'} hidden={mode === 'expand'} onAbout={onAbout} />}
 
-      {!narrowDrill && spokes.map((s, i) => {
+      {!mobile && !narrowDrill && spokes.map((s, i) => {
         const n = pos.nodes[i];
         let state = 'idle';
         if (mode !== 'overview') state = s.id === active ? 'active' : mode === 'expand' ? 'hidden' : 'dim';
-        const style = mode === 'expand' && s.id === active ?
-        { left: dl.parent.x + '%', top: dl.parent.y + '%' } :
-        { left: n.x + '%', top: n.y + '%' };
+        const style = mode === 'expand' && s.id === active && dl && dl.parent
+          ? { left: dl.parent.x + '%', top: dl.parent.y + '%' }
+          : { left: n.x + '%', top: n.y + '%' };
         return (
           <SpokeNode key={s.id} spoke={s} state={state} style={style}
           onClick={() => setActive(active === s.id ? null : s.id)} />);
@@ -589,10 +624,10 @@ function MindMap({ layout, reveal, onAbout }) {
 
       {drilling && !narrowDrill && children.length > 0 && children.map((c, i) =>
       <ChildNode key={c.key} child={c} onOpenProject={setProject}
-      style={{ left: dl.children[i].x + '%', top: dl.children[i].y + '%' }} />
+      style={dl && dl.children && dl.children[i] ? { left: dl.children[i].x + '%', top: dl.children[i].y + '%' } : undefined} />
       )}
 
-      {drilling && !narrowDrill && children.length === 0 &&
+      {drilling && !narrowDrill && children.length === 0 && dl && dl.children && dl.children[0] &&
       <div className="mm-child" style={{ left: dl.children[0].x + '%', top: dl.children[0].y + '%' }}>
           <div className="mm-cempty">
             <i data-lucide="sparkles"></i>

@@ -9,186 +9,227 @@ window.PROFILE = {
   email: "annabelle.clarklepard@gmail.com",
   linkedin: "www.linkedin.com/in/annabelle-clark-lepard",
   linkedinUrl: "https://www.linkedin.com/in/annabelle-clark-lepard",
-  headline: "Designing clarity into complex systems.",
-  subhead: "I lead product design for financial, operational, and accessible platforms at scale \u2014 turning audits, data, and constraints into experiences teams trust.",
+  headline: "I make messy systems feel clear.",
+  subhead: "I design product experiences for financial, operational, and accessibility-heavy work. I like the messy stuff: real constraints, confusing data, and systems that need to be simpler without losing trust.",
   specialties: [
-    "B2B financial & operational systems",
-    "Payments, registration & data-heavy workflows",
-    "Design & process AI transformation"
+    "B2B payments and operations",
+    "Registration and data-heavy workflows",
+    "AI adoption and product change"
   ]
 };
 window.METRICS = [
   { n: "2M+", l: "Users guided through high-traffic events" },
-  { n: "4 days", l: "Faster merchant statements, every month" },
-  { n: "WCAG AA", l: "Accessible design system, by default" }
+  { n: "4 days", l: "Faster merchant statements every month" },
+  { n: "WCAG AA", l: "Accessible default patterns" }
 ];
 window.EXPERTISE = [
   {
     icon: "landmark",
     h: "Financial Systems & Payments",
-    p: "Merchant statements, reconciliation, and billing flows where accuracy, traceability, and trust are non-negotiable."
+    p: "Merchant statements, reconciliation, and billing flows where trust, traceability, and accuracy matter."
   },
   {
     icon: "gauge",
     h: "Performance & High-Stakes UX",
-    p: "Queueing, registration, and security-recovery flows that stay calm and usable under load, stress, and competitive pressure."
+    p: "Registration, queueing, and recovery flows that stay calm and usable under pressure."
   },
   {
     icon: "megaphone",
     h: "Client Communication & Workflow Tooling",
-    p: "Staff-facing tools for hiring and client communication \u2014 built for real volume, fast scanning, and legible status."
+    p: "Staff tools for communication and workflow management built for volume, status clarity, and fast decisions."
   },
   {
     icon: "sparkles",
     h: "AI Transformation Leadership",
-    p: "Leading product teams from AI-skeptical to AI-fluent \u2014 embedding AI into delivery workflows responsibly, not just as novelty."
+    p: "Helping teams move from AI skepticism to practical, embedded use that actually improves the work."
   },
   {
     icon: "search",
     h: "Research, Analysis & Documentation",
-    p: "Turning noisy backlogs and scattered knowledge into synthesized themes, audits, and documentation teams actually use."
+    p: "Turning noisy requests and scattered knowledge into clear themes, audits, and docs teams can use."
   },
   {
     icon: "layout-grid",
     h: "Accessible Design Systems",
-    p: "Single sources of truth that bake WCAG AA into defaults \u2014 reducing friction, regressions, and rework across product and engineering."
+    p: "Design systems that make accessibility a default, not a fix after the fact."
   }
 ];
 window.SKILLS = [
-  { h: "Design", items: ["Product Design", "Design Systems", "Interaction Design", "Accessibility (WCAG AA)", "Prototyping", "Mobile-first UI"] },
-  { h: "Research & Process", items: ["User Research", "Usability Testing", "Journey & Flow Mapping", "Edge-case Validation", "Project Management"] },
-  { h: "Technical", items: ["Figma", "FigJam", "SQL Querying", "API Integration", "HTML & CSS"] }
+  { h: "Design", items: ["Product Design", "Design Systems", "Interaction Design", "Accessibility", "Prototyping", "Mobile-first UI"] },
+  { h: "Research & Process", items: ["User Research", "Usability Testing", "Journey Mapping", "Edge-case Analysis", "Project Management"] },
+  { h: "Technical", items: ["Figma", "FigJam", "SQL", "API Integration", "HTML & CSS"] }
 ];
 window.PROJECTS = [
   {
     id: "design-system",
     tag: "Design Systems",
-    title: "Accessible Design System as a Source of Truth",
-    blurb: "A WCAG AA-compliant system that became the shared language between design, product, and engineering.",
-    discipline: "Design systems that reduce friction, ensure consistency, and make it easier for teams to ship accessible, high-quality UX.",
+    title: "Accessible Design System",
+    blurb: "A shared source of truth for a product area that was getting messy and inconsistent.",
+    discipline: "Design systems that keep the UI consistent, make the work easier to ship, and bake accessibility in from the start.",
     role: "Product Designer \xB7 Project Manager",
     context: "Figma \xB7 Mobile-first \xB7 B2B2C e-commerce",
-    constraints: ["Legacy functionality", "WCAG AA audit requirements", "Non-technical product team", "Lack of design resources"],
+    constraints: ["Legacy patterns", "WCAG AA requirements", "A non-technical product team", "Not enough design bandwidth"],
     accent: "var(--color-teal)",
     image: "assets/proj-design-system.png",
-    imageCaption: "Button system \u2014 primary, secondary, and contrast variants with documented states and accessibility rationale (WCAG AA).",
-    solution: "A comprehensive, WCAG AA-compliant design system serving as a shared source of truth across product, design, and development \u2014 covering every reusable component in the codebase, not just buttons, with naming and semantics matched to the code so designers, PMs, and engineers were always referencing the same thing the same way.",
+    imageCaption: "A component library with clear states, contrast guidance, and documented accessibility decisions.",
+    solution: "I built a design system that gave the team one shared language. It covered the patterns people were actually using, not just the obvious basics, and matched the naming and structure to the code so design and engineering were describing the same thing the same way.",
     solutionPoints: [
-      "Every reusable component in the codebase represented in the system \u2014 inputs, cards, alerts, navigation, and more, not just buttons \u2014 each with documented states and accessibility rationale.",
-      'Component naming and semantics matched directly to the codebase, so a "primary button" or "alert banner" in Figma was unambiguously the same thing a developer saw in code.',
-      "Primary button variants documented with when, why, and the key accessibility decisions behind each.",
-      "Foundational colours connected to variables, with guidance on when and why each colour applies."
+      "Mapped the reusable patterns in the product instead of only the obvious UI elements.",
+      "Aligned naming and structure with code so the same thing had the same meaning across teams.",
+      "Documented the why behind states, spacing, and accessibility decisions so the system was easier to trust."
     ],
     problems: [
-      { who: "The User", sub: "E-commerce portal customers", t: "Inconsistent UI patterns created fragmented, confusing experiences." },
-      { who: "The Developers", sub: "", t: "Lost time rebuilding or adapting components for every new feature." },
-      { who: "The Product Team", sub: "", t: "Struggled to communicate with developers without a reliable reference point." },
-      { who: "The Business", sub: "", t: "Growing WCAG requirements introduced real risk of non-compliance." }
+      { who: "The User", sub: "Portal customers", t: "The experience felt fragmented and inconsistent in places." },
+      { who: "The Team", sub: "Product and engineering", t: "There was no single system to build from, so work got duplicated and reinterpreted." },
+      { who: "The Business", sub: "", t: "Accessibility requirements were growing and the team needed a way to keep up without reworking everything later." }
     ],
     success: [
-      "A single source of truth for design, product, and engineering.",
-      "Accessible components by default \u2014 WCAG AA compliant.",
-      "Faster, smoother feature delivery with fewer UX regressions.",
-      "Clear communication across product and development."
+      "One shared source of truth across design, product, and engineering.",
+      "Accessibility built in by default, not patched in later.",
+      "Less churn and fewer regressions when shipping work."
     ],
     process: [
-      "Audited the existing UI for inconsistencies, accessibility gaps, and legacy patterns \u2014 mapping end-to-end flows to see how components behaved in real scenarios.",
-      "Defined system foundations: core components, states, patterns, typography, colour, spacing, and interaction principles built for scale and accessibility.",
-      "Built the system in Figma with styles, variables, and components \u2014 every reusable component named and structured to match its counterpart in code \u2014 so consistency and accessibility were baked into defaults, not applied retroactively.",
-      "Collaborated with PMs and developers to validate feasibility, align on needs, and drive adoption across teams."
+      "Audited the existing UI to find where patterns broke down and where accessibility was being missed.",
+      "Defined the system at the component level, including states, colors, spacing, and interaction patterns.",
+      "Built the library in Figma and aligned it to the codebase so the language was consistent between design and build.",
+      "Worked with PMs and engineers to make sure it was useful in the real product context, not just on paper."
     ],
     impact: [
-      "Increased PM confidence communicating priorities through a shared, reliable source of truth.",
-      "Improved developer clarity with reusable components whose names and semantics matched the code, cutting translation loss between design and engineering.",
-      "Reduced WCAG AA compliance risk by embedding accessibility rather than reacting to it.",
-      "Freed up team time to focus on product strategy under one aligned vision."
+      "A clearer shared language across teams.",
+      "Fewer design and engineering mismatches.",
+      "Accessibility became part of the default, not a late-stage concern."
     ],
-    challenge: "Aligning developers and non-technical product managers on priorities, tradeoffs, and feasibility while establishing a shared system.",
-    takeaway: "Design systems align teams on more than pixels. Treated as a collaborative initiative, they create shared language, reduce friction between roles, and make accessibility and consistency the foundation a team can rely on."
+    challenge: "Building a system that worked for product, engineering, and accessibility without losing the real constraints of the product.",
+    takeaway: "Design systems are not just a library. They are a way to make the work clearer, more consistent, and easier to trust."
+  },
+  {
+    id: "volleyball-lineup-planner",
+    tag: "Personal Projects",
+    title: "Volleyball Rotation Tool",
+    blurb: "A quick, mobile-first tool for sharing the lineup with my team without the usual group chat chaos.",
+    discipline: "A lightweight product built for the real problem of a captain needing to manage availability, rotations, and communication without friction.",
+    role: "Team captain + product designer + frontend builder",
+    context: "React \xB7 TypeScript \xB7 Vite \xB7 Local-first \xB7 Mobile-first",
+    constraints: ["No login", "Fast updates on my phone", "No recreating the roster every time", "Easy lineup sharing with the team"],
+    accent: "var(--color-teal)",
+    image: "assets/volleyball-website.png",
+    imageCaption: "A working lineup planner for my team, simple enough to use on my phone when the rotation needed to be shared quickly.",
+    website: "https://github.com/AnnabelleClarkLepard/Volleyball",
+    demo: "https://annabelleclarklepard.github.io/Volleyball/",
+    thumbIcon: "folder",
+    solution: "I was acting as captain and needed a faster way to manage the rotation without doing it over messy group chat or a spreadsheet. I wanted something I could open on my phone, update quickly, and reuse every week. So I built a small browser app for the exact workflow I needed.",
+    solutionPoints: [
+      "Saved the roster so I did not have to rebuild the team from scratch every time.",
+      "Made the lineup and bench order clear enough to use on mobile in the moment.",
+      "Kept it focused on the basics: no login, no backend, and no extra work."
+    ],
+    problems: [
+      { who: "The Team", sub: "", t: "The rotation was getting managed in a chaotic, informal way, which made it harder to know who was available and where everyone fit." },
+      { who: "The Captain", sub: "", t: "I needed a quick way to set the lineup without losing time re-entering the same information over and over." },
+      { who: "The Product", sub: "", t: "Most tools felt heavier than the actual problem, so I made something simpler instead." }
+    ],
+    success: [
+      "A faster way to sort out the rotation.",
+      "A saved roster that made repeated lineup decisions much easier.",
+      "A tool built from a real team problem instead of a generic product idea."
+    ],
+    process: [
+      "Started with the actual workflow: save the team, track availability, assign players to positions, and make the bench order obvious.",
+      "I built it for the phone first, because that is where the team actually needed it.",
+      "Focused on the few decisions that mattered most: who starts, who is available, and who rotates in next.",
+      "Kept the app lightweight so it stayed easy to use instead of turning into admin work."
+    ],
+    impact: [
+      "A practical tool built around a real problem.",
+      "Faster rotation decisions and easier communication with the team.",
+      "A product that stayed focused on speed, simplicity, and usefulness."
+    ],
+    challenge: "Making the tool simple enough to use in the middle of real team planning without adding friction.",
+    takeaway: "This project came from a real need on my team: making lineup communication easier, faster, and less chaotic."
   },
   {
     id: "merchant-statements",
     tag: "Financial Systems",
-    title: "Integrated Payment Processing Merchant Statements",
-    blurb: "An automated, transparent merchant statement experience connecting UI, SQL data, and APIs into one coherent system.",
-    discipline: "Easy-to-use financial tools that balance accuracy, trust, and the realities of audits, reconciliation, and constraints.",
+    title: "Merchant Statements",
+    blurb: "A clearer way to explain the numbers behind a payment statement without making the user decode the system themselves.",
+    discipline: "Financial tools that have to be accurate, trusted, and easy to understand for people who are not living in the data every day.",
     role: "Product Designer \xB7 Product Manager \xB7 Project Manager",
-    context: "Figma \xB7 SQL Financial Querying \xB7 API Integration \xB7 B2B",
-    constraints: ["Legacy financial workflows", "Third-party integrations", "Data accuracy & audit requirements", "Non-technical users"],
+    context: "Figma \xB7 SQL \xB7 API Integration \xB7 B2B",
+    constraints: ["Legacy workflows", "Third-party data", "Audit and accuracy needs", "Non-technical users"],
     accent: "var(--color-sage)",
     image: "assets/proj-merchant.png",
-    imageCaption: "Merchant statement portal \u2014 dated statements, fee history, and recipient management, opening the generated statement document.",
-    solution: "A fully integrated, automated merchant statement experience accessible from the user portal \u2014 connecting UI design, SQL-driven data generation, and API responses into a single, coherent system.",
+    imageCaption: "A statement experience with the right details surfaced in plain language and a clearer review flow.",
+    solution: "I designed a statement experience that connected the portal to the financial logic behind it. The goal was to make the numbers easier to trust and easier to explain, without forcing the user to reverse-engineer the system in order to understand what happened.",
     solutionPoints: [
-      "Built into the portal where users already work \u2014 letting them access dated statements and edit account settings without manual intervention."
+      "Connected the financial data to the user experience so people could see what was being calculated and why.",
+      "Made statement details clear enough for users to understand the outcome without digging through multiple screens.",
+      "Worked across product, data, and engineering so the interface reflected the actual logic instead of approximating it."
     ],
     problems: [
-      { who: "The User", sub: "Merchants", t: "Limited visibility into how statement totals were calculated reduced trust and usability." },
-      { who: "The Developers", sub: "", t: "Manual processes and unclear data connections increased errors and slowed troubleshooting." },
-      { who: "The Business", sub: "", t: "Manual invoicing introduced accuracy risk, delayed revenue communication, and operational overhead." }
+      { who: "The User", sub: "Merchants", t: "The statement experience was not clear enough to explain the numbers and build trust." },
+      { who: "The Team", sub: "", t: "The data was usable, but the experience did not make that obvious." },
+      { who: "The Business", sub: "", t: "Manual processes and unclear reporting made reconciliation and accuracy harder than they needed to be." }
     ],
     success: [
-      "Clear, trustworthy merchant statements that explain financial outcomes.",
-      "A shared data model aligning UI, APIs, and reconciliation logic.",
-      "Automated statement generation with minimal manual intervention."
+      "A more trustworthy merchant statement experience.",
+      "Clearer financial communication for people who were not working in the data every day.",
+      "A stronger connection between UI, data, and reconciliation logic."
     ],
     process: [
-      "Collaborated with payment operations to map user expectations, pain points, and typical billing and reconciliation flows.",
-      "Partnered with third-party and internal engineers to align API responses with clearly structured, understandable financial data.",
-      "Designed the merchant-facing UI for accessing and understanding statements \u2014 focused on clarity, hierarchy, and trust.",
-      "Wrote and validated SQL queries generating statement data, ensuring accuracy, traceability, and reconciliation support.",
-      "Tested statement data against edge cases to validate accuracy under varied scenarios."
+      "Mapped the end-to-end flow and looked for where trust broke down.",
+      "Worked with ops and engineering to align the data model and the UI.",
+      "Designed a clearer statement experience focused on hierarchy, legibility, and trust.",
+      "Validated the result against real financial edge cases so it held up in practice."
     ],
     impact: [
-      "Improved user trust through clearer, more transparent financial statements.",
-      "Reduced troubleshooting ambiguity by aligning APIs directly to reconciliation needs.",
-      "Eliminated manual errors through accurate, SQL-driven statement generation.",
-      "Accelerated statement delivery by 4 days each month for faster reconciliation."
+      "Users had a clearer and more credible view of their statements.",
+      "Less ambiguity in financial reporting and reconciliation.",
+      "A more direct path from raw data to a user outcome they could act on."
     ],
-    challenge: "Bridging UI/UX design, data logic, and API constraints while keeping financial data accurate, explainable, and trustworthy for non-technical users.",
-    takeaway: "Designing financial products requires ownership beyond the interface. When designers engage with data and system logic, experiences become clearer, more reliable, and more valuable to users."
+    challenge: "Designing a financial product that was not just usable, but also explainable and trustworthy under real pressure.",
+    takeaway: "In financial UX, trust comes from clarity. If the user cannot tell what happened and why, the tool fails even when the numbers are accurate."
   },
   {
     id: "queueing-system",
     tag: "Performance & Security",
-    title: "Integrated High-Volume Queueing System",
-    blurb: "A calm, predictable waiting-room experience that carried 2M+ users through high-stakes, high-traffic events.",
-    discipline: "Clear, resilient experiences designed to remain usable during high traffic, system strain, and user stress.",
+    title: "High-Volume Queueing",
+    blurb: "A waiting-room experience built to stay calm and legible when traffic spikes and people are stressed.",
+    discipline: "Performance UX where the system has to stay clear under pressure and the user still needs to feel in control.",
     role: "Product Designer \xB7 Operations Coordinator",
     context: "Figma \xB7 FigJam \xB7 JavaScript & CSS",
-    constraints: ["High traffic volumes", "Users under stress", "Non-technical stakeholders", "Server scaling cost limits"],
+    constraints: ["High traffic volume", "Users under stress", "Non-technical stakeholders", "Server cost limits"],
     accent: "var(--color-sky)",
     image: "assets/proj-queueing.png",
-    imageCaption: "Virtual waiting-room flow \u2014 decision logic across scheduled and global high-volume events, paired with live throughput monitoring.",
-    solution: "An integrated external queueing system that managed high-volume traffic with a predictable, controlled flow \u2014 easing platform strain. The waiting room guided users through their place in line, expected wait times, and live updates during high-stakes, competitive transactions.",
+    imageCaption: "A queueing flow with clear position, wait-time, and status updates during high-pressure events.",
+    solution: "I designed a queueing system that kept the experience predictable during high-volume moments. The goal was not just to protect the platform, but to make the user experience feel manageable, trustworthy, and clear while they waited.",
     solutionPoints: [
-      "Non-technical flow guide and queue-monitoring dashboard used to manage high-traffic events and keep system load controlled."
+      "Created a queue flow that gave people a clear sense of where they were and how long they might wait.",
+      "Built a control layer for teams managing system load without making the user experience feel cold or confusing.",
+      "Kept the flow readable and predictable for stressful, high-traffic moments."
     ],
     problems: [
-      { who: "The User", sub: "Registrants on a public portal", t: "Confusion and anxiety during high-traffic events led to frustration and abandoned transactions." },
-      { who: "The Team", sub: "Developers & operations", t: "Errors and failures from high throughput required constant DevOps and operations monitoring." },
-      { who: "The Business", sub: "", t: "Scaling quickly for unpredictable spikes was costly; uncontrolled events risked cost and user trust." }
+      { who: "The User", sub: "Registrants", t: "High-volume events created confusion, stress, and a lot of friction." },
+      { who: "The Team", sub: "Developers and operations", t: "The platform was under pressure and the team needed a way to manage the load without breaking trust." },
+      { who: "The Business", sub: "", t: "Cost and user trust both suffered if traffic was not managed well." }
     ],
     success: [
-      "Users understand their place in the queue and expected wait times.",
-      "A smooth, predictable experience for users and internal teams during peak traffic.",
-      "Reduced frustration and improved trust during high-stakes events."
+      "Users had a clearer sense of where they were in the queue.",
+      "A smoother experience during peak traffic.",
+      "A better balance between operational control and user trust."
     ],
     process: [
-      "Researched user behaviour during high-stress, competitive transactions to build a queueing flow that fostered trust and reduced stress.",
-      "Partnered with operations to understand throughput and the pressure events placed on DevOps and support.",
-      "Designed the waiting-room UI in Figma and mapped flows in FigJam to align internal teams on queue mechanics.",
-      "Built the interface in JavaScript and CSS \u2014 clearly showing queue position, wait times, and live updates.",
-      "Tested real scenarios for edge cases, keeping the experience predictable for users and manageable for teams."
+      "Researched the behavior of users during high-stress, competitive moments.",
+      "Worked with operations to understand the strain on the platform and the support team.",
+      "Designed the queue flow in Figma and validated the experience against real high-traffic scenarios.",
+      "Built the interface with clear queue position, wait-time updates, and a predictable flow."
     ],
     impact: [
-      "Over 2 million end-users successfully navigated high-traffic events through the queueing system.",
-      "Confident, calm users thanks to clear expectations and visible progress.",
-      "Reduced errors and failures, with documentation easing strain on DevOps and support.",
-      "Controlled flow enabled methodical scaling \u2014 reducing cost and building trust."
+      "Over 2 million users got through high-traffic events with clearer guidance.",
+      "Fewer moments of confusion and abandonment.",
+      "A better balance between system performance and user trust."
     ],
-    challenge: "Balancing user needs under stress with operational strain \u2014 ensuring teams could support the system, clients, and users effectively.",
-    takeaway: "Performance is a core part of UX. Thoughtful design guides users confidently through complex, competitive transactions instead of leaving them in the dark \u2014 turning stressful moments into ones that feel clear, reliable, and trustworthy."
+    challenge: "Keeping the experience calm and understandable when the system is under real pressure and people are already stressed.",
+    takeaway: "Performance UX is not just back-end work. It is about making stressful moments feel manageable and clear."
   },
   {
     id: "fundraising-payments",
@@ -562,7 +603,7 @@ window.SPOKES = [
   {
     id: "financial",
     label: "Financial Systems",
-    sub: "Payments & Billing",
+    sub: "Trust, accuracy & billing",
     icon: "landmark",
     blurb: "Statements, reconciliation, donations, and refunds \u2014 where accuracy, traceability, and reversibility are what build trust.",
     projectIds: ["merchant-statements", "fundraising-payments"],
@@ -570,30 +611,39 @@ window.SPOKES = [
   },
   {
     id: "registration",
-    label: "High-Stakes UX",
-    sub: "Registration & Security",
+    label: "High-Stakes Journeys",
+    sub: "Registration & security",
     icon: "gauge",
-    blurb: "High-volume, time-sensitive journeys \u2014 queueing, waitlists, and security recovery \u2014 kept calm and usable under pressure.",
+    blurb: "High-volume, time-sensitive journeys \u2014 queueing, registration, and security recovery \u2014 kept calm and usable under pressure.",
     projectIds: ["queueing-system", "registration-mobile", "waitlist-decision", "auth-security"],
     expertise: ["Performance & High-Stakes UX"]
   },
   {
     id: "systems",
-    label: "Client Operations",
-    sub: "Communication & Workflow Management",
+    label: "Operational Workflows",
+    sub: "Client tools & staff operations",
     icon: "megaphone",
-    blurb: "The tools our clients rely on to manage hiring and communicate with the people they serve \u2014 fast, clear, and built for real workloads.",
+    blurb: "The tools our clients rely on to manage hiring, communications, and service operations \u2014 clear, legible, and built for real workload.",
     projectIds: ["forms-strategy", "outbox"],
     expertise: ["Client Communication & Workflow Tooling"]
   },
   {
-    id: "practice",
-    label: "Leadership",
-    sub: "AI & Design Excellence",
-    icon: "sparkles",
-    blurb: "Reshaping how teams work and what they build on \u2014 leading AI adoption, grounding decisions in research, and raising the design bar.",
+    id: "platform",
+    label: "Product Platforms",
+    sub: "Design systems & leadership",
+    icon: "layout-grid",
+    blurb: "Design systems, AI adoption, and research infrastructure \u2014 creating clarity, consistency, and a better delivery rhythm across product teams.",
     projectIds: ["design-system", "ai-leadership", "research-documentation"],
     expertise: ["AI Transformation Leadership", "Accessible Design Systems", "Research, Analysis & Documentation"]
+  },
+  {
+    id: "personal",
+    label: "Personal Projects",
+    sub: "Product exploration",
+    icon: "rocket",
+    blurb: "Side projects that let me prototype product ideas quickly, focus on user value, and explore problems beyond the day job.",
+    projectIds: ["volleyball-lineup-planner"],
+    expertise: ["Product Design", "Interaction Design", "Prototyping"]
   }
 ];
 window.expertiseByName = function(name) {
@@ -685,7 +735,7 @@ function ProjectModal({ p, onClose }) {
     };
   }, [p]);
   if (!p) return null;
-  return /* @__PURE__ */ React.createElement("div", { style: modalStyles.overlay, onClick: onClose }, /* @__PURE__ */ React.createElement("style", null, MODAL_RESPONSIVE_CSS), /* @__PURE__ */ React.createElement("div", { style: modalStyles.modal, onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement("button", { style: modalStyles.close, onClick: onClose, "aria-label": "Close" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "x", style: { width: 20, height: 20 } })), /* @__PURE__ */ React.createElement("div", { className: "modal-pad modal-hero", style: { ...modalStyles.hero, background: `linear-gradient(150deg, var(--color-navy), var(--color-slate))`, display: "flex", alignItems: "center", gap: 32, justifyContent: "space-between" } }, /* @__PURE__ */ React.createElement("div", { style: { minWidth: 0 } }, /* @__PURE__ */ React.createElement("span", { style: { ...workStyles.badge, background: "rgba(125,191,170,0.18)", color: "var(--color-mint)", border: "1px solid rgba(125,191,170,0.3)" } }, p.tag), /* @__PURE__ */ React.createElement("h2", { style: modalStyles.title }, p.title), /* @__PURE__ */ React.createElement("p", { style: modalStyles.discipline }, p.discipline)), p.image && /* @__PURE__ */ React.createElement("div", { className: "modal-hero-thumb", style: modalStyles.heroThumb }, /* @__PURE__ */ React.createElement("img", { src: p.image, alt: "", style: modalStyles.heroThumbImg }))), /* @__PURE__ */ React.createElement("div", { style: modalStyles.body, className: "modal-pad" }, p.image && /* @__PURE__ */ React.createElement("figure", { style: modalStyles.figure }, /* @__PURE__ */ React.createElement("div", { style: modalStyles.figFrame }, /* @__PURE__ */ React.createElement("img", { src: p.image, alt: p.title, style: modalStyles.figImg })), /* @__PURE__ */ React.createElement("figcaption", { style: modalStyles.figCap }, p.imageCaption)), /* @__PURE__ */ React.createElement(Pillars, { p }), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 24, display: "flex", flexWrap: "wrap", gap: 8 } }, /* @__PURE__ */ React.createElement("span", { style: modalStyles.constraintLabel }, "Constraints"), p.constraints.map((c) => /* @__PURE__ */ React.createElement("span", { key: c, style: modalStyles.constraint }, c))), /* @__PURE__ */ React.createElement(Block, { label: "The Solution" }, /* @__PURE__ */ React.createElement("p", { style: modalStyles.para }, p.solution), p.solutionPoints && /* @__PURE__ */ React.createElement("ul", { style: { margin: "14px 0 0", padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 10 } }, p.solutionPoints.map((s, i) => /* @__PURE__ */ React.createElement("li", { key: i, style: { display: "flex", gap: 12, alignItems: "flex-start" } }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "arrow-right", style: { width: 16, height: 16, color: "var(--color-sky)", flexShrink: 0, marginTop: 4 } }), /* @__PURE__ */ React.createElement("span", { style: modalStyles.liText }, s))))), /* @__PURE__ */ React.createElement(Block, { label: "The Core Problems" }, /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 12 } }, p.problems.map((pr, i) => /* @__PURE__ */ React.createElement("div", { key: i, style: modalStyles.problemCard }, /* @__PURE__ */ React.createElement("div", { style: modalStyles.problemWho }, pr.who, pr.sub ? /* @__PURE__ */ React.createElement("span", { style: modalStyles.problemSub }, " \xB7 ", pr.sub) : null), /* @__PURE__ */ React.createElement("div", { style: modalStyles.problemText }, pr.t))))), /* @__PURE__ */ React.createElement("div", { style: modalStyles.twoCol, className: "two-col" }, /* @__PURE__ */ React.createElement(Block, { label: "What Success Looks Like" }, /* @__PURE__ */ React.createElement(CheckList, { items: p.success, accent: "var(--color-sage)" })), /* @__PURE__ */ React.createElement(Block, { label: "The Impact" }, /* @__PURE__ */ React.createElement(CheckList, { items: p.impact, accent: "var(--color-teal)" }))), /* @__PURE__ */ React.createElement(Block, { label: "The Process" }, /* @__PURE__ */ React.createElement("ol", { style: { listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 14 } }, p.process.map((step, i) => /* @__PURE__ */ React.createElement("li", { key: i, style: { display: "flex", gap: 16, alignItems: "flex-start" } }, /* @__PURE__ */ React.createElement("span", { style: modalStyles.stepNum }, i + 1), /* @__PURE__ */ React.createElement("span", { style: { ...modalStyles.liText, paddingTop: 3 } }, step))))), /* @__PURE__ */ React.createElement(Block, { label: "Reflection" }, /* @__PURE__ */ React.createElement("div", { className: "two-col", style: modalStyles.reflectGrid }, /* @__PURE__ */ React.createElement("div", { style: modalStyles.reflectCard }, /* @__PURE__ */ React.createElement("div", { style: modalStyles.reflectLabel }, "Biggest challenge"), /* @__PURE__ */ React.createElement("p", { style: modalStyles.reflectText }, p.challenge)), /* @__PURE__ */ React.createElement("div", { style: { ...modalStyles.reflectCard, background: "var(--color-pale-green)", border: "1px solid var(--color-mint)" } }, /* @__PURE__ */ React.createElement("div", { style: { ...modalStyles.reflectLabel, color: "var(--color-teal)" } }, "Key takeaway"), /* @__PURE__ */ React.createElement("p", { style: modalStyles.reflectText }, p.takeaway)))))));
+  return /* @__PURE__ */ React.createElement("div", { style: modalStyles.overlay, onClick: onClose }, /* @__PURE__ */ React.createElement("style", null, MODAL_RESPONSIVE_CSS), /* @__PURE__ */ React.createElement("div", { style: modalStyles.modal, onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement("button", { style: modalStyles.close, onClick: onClose, "aria-label": "Close" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "x", style: { width: 20, height: 20 } })), /* @__PURE__ */ React.createElement("div", { className: "modal-pad modal-hero", style: { ...modalStyles.hero, background: `linear-gradient(150deg, var(--color-navy), var(--color-slate))`, display: "flex", alignItems: "center", gap: 32, justifyContent: "space-between" } }, /* @__PURE__ */ React.createElement("div", { style: { minWidth: 0 } }, /* @__PURE__ */ React.createElement("span", { style: { ...workStyles.badge, background: "rgba(125,191,170,0.18)", color: "var(--color-mint)", border: "1px solid rgba(125,191,170,0.3)" } }, p.tag), /* @__PURE__ */ React.createElement("h2", { style: modalStyles.title }, p.title), /* @__PURE__ */ React.createElement("p", { style: modalStyles.discipline }, p.discipline), (p.website || p.demo) && /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexWrap: "wrap", gap: 10, marginTop: 18 } }, p.website && /* @__PURE__ */ React.createElement("a", { href: p.website, target: "_blank", rel: "noreferrer", style: modalStyles.ctaLinkPrimary }, "GitHub"), p.demo && /* @__PURE__ */ React.createElement("a", { href: p.demo, target: "_blank", rel: "noreferrer", style: modalStyles.ctaLinkSecondary }, "Demo"))), p.image && /* @__PURE__ */ React.createElement("div", { className: "modal-hero-thumb", style: modalStyles.heroThumb }, /* @__PURE__ */ React.createElement("img", { src: p.image, alt: "", style: modalStyles.heroThumbImg }))), /* @__PURE__ */ React.createElement("div", { style: modalStyles.body, className: "modal-pad" }, p.image && /* @__PURE__ */ React.createElement("figure", { style: modalStyles.figure }, /* @__PURE__ */ React.createElement("div", { style: modalStyles.figFrame }, /* @__PURE__ */ React.createElement("img", { src: p.image, alt: p.title, style: modalStyles.figImg })), /* @__PURE__ */ React.createElement("figcaption", { style: modalStyles.figCap }, p.imageCaption)), /* @__PURE__ */ React.createElement(Pillars, { p }), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 24, display: "flex", flexWrap: "wrap", gap: 8 } }, /* @__PURE__ */ React.createElement("span", { style: modalStyles.constraintLabel }, "Constraints"), p.constraints.map((c) => /* @__PURE__ */ React.createElement("span", { key: c, style: modalStyles.constraint }, c))), /* @__PURE__ */ React.createElement(Block, { label: "The Solution" }, /* @__PURE__ */ React.createElement("p", { style: modalStyles.para }, p.solution), p.solutionPoints && /* @__PURE__ */ React.createElement("ul", { style: { margin: "14px 0 0", padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 10 } }, p.solutionPoints.map((s, i) => /* @__PURE__ */ React.createElement("li", { key: i, style: { display: "flex", gap: 12, alignItems: "flex-start" } }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "arrow-right", style: { width: 16, height: 16, color: "var(--color-sky)", flexShrink: 0, marginTop: 4 } }), /* @__PURE__ */ React.createElement("span", { style: modalStyles.liText }, s))))), /* @__PURE__ */ React.createElement(Block, { label: "The Core Problems" }, /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 12 } }, p.problems.map((pr, i) => /* @__PURE__ */ React.createElement("div", { key: i, style: modalStyles.problemCard }, /* @__PURE__ */ React.createElement("div", { style: modalStyles.problemWho }, pr.who, pr.sub ? /* @__PURE__ */ React.createElement("span", { style: modalStyles.problemSub }, " \xB7 ", pr.sub) : null), /* @__PURE__ */ React.createElement("div", { style: modalStyles.problemText }, pr.t))))), /* @__PURE__ */ React.createElement("div", { style: modalStyles.twoCol, className: "two-col" }, /* @__PURE__ */ React.createElement(Block, { label: "What Success Looks Like" }, /* @__PURE__ */ React.createElement(CheckList, { items: p.success, accent: "var(--color-sage)" })), /* @__PURE__ */ React.createElement(Block, { label: "The Impact" }, /* @__PURE__ */ React.createElement(CheckList, { items: p.impact, accent: "var(--color-teal)" }))), /* @__PURE__ */ React.createElement(Block, { label: "The Process" }, /* @__PURE__ */ React.createElement("ol", { style: { listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 14 } }, p.process.map((step, i) => /* @__PURE__ */ React.createElement("li", { key: i, style: { display: "flex", gap: 16, alignItems: "flex-start" } }, /* @__PURE__ */ React.createElement("span", { style: modalStyles.stepNum }, i + 1), /* @__PURE__ */ React.createElement("span", { style: { ...modalStyles.liText, paddingTop: 3 } }, step))))), /* @__PURE__ */ React.createElement(Block, { label: "Reflection" }, /* @__PURE__ */ React.createElement("div", { className: "two-col", style: modalStyles.reflectGrid }, /* @__PURE__ */ React.createElement("div", { style: modalStyles.reflectCard }, /* @__PURE__ */ React.createElement("div", { style: modalStyles.reflectLabel }, "Biggest challenge"), /* @__PURE__ */ React.createElement("p", { style: modalStyles.reflectText }, p.challenge)), /* @__PURE__ */ React.createElement("div", { style: { ...modalStyles.reflectCard, background: "var(--color-pale-green)", border: "1px solid var(--color-mint)" } }, /* @__PURE__ */ React.createElement("div", { style: { ...modalStyles.reflectLabel, color: "var(--color-teal)" } }, "Key takeaway"), /* @__PURE__ */ React.createElement("p", { style: modalStyles.reflectText }, p.takeaway)))))));
 }
 function Work({ onOpen }) {
   return /* @__PURE__ */ React.createElement("section", { style: workStyles.section }, /* @__PURE__ */ React.createElement("div", { style: workStyles.inner }, /* @__PURE__ */ React.createElement("div", { style: workStyles.overline }, "Selected Work"), /* @__PURE__ */ React.createElement("h2", { style: workStyles.heading }, "Three systems, built for trust at scale"), /* @__PURE__ */ React.createElement("div", { style: workStyles.bar }), /* @__PURE__ */ React.createElement("div", { style: workStyles.grid }, window.PROJECTS.map((p, i) => /* @__PURE__ */ React.createElement(ProjectCard, { key: p.id, p, index: i, onOpen })))));
@@ -720,6 +770,8 @@ const modalStyles = {
   figFrame: { background: "var(--color-pale-blue)", border: "1px solid var(--color-silver)", borderRadius: 12, padding: 18, display: "flex", justifyContent: "center" },
   figImg: { maxWidth: "100%", maxHeight: 460, objectFit: "contain", borderRadius: 6, display: "block" },
   figCap: { fontFamily: "var(--font-body)", fontSize: 13, color: "var(--color-stone-aa)", lineHeight: 1.6, margin: "12px 2px 0", textAlign: "center", maxWidth: "64ch", marginLeft: "auto", marginRight: "auto" },
+  ctaLinkPrimary: { display: "inline-flex", alignItems: "center", justifyContent: "center", background: "var(--color-mint)", color: "#173c3b", textDecoration: "none", borderRadius: 999, padding: "9px 16px", fontFamily: "var(--font-body)", fontSize: 13, fontWeight: 600, boxShadow: "var(--shadow-xs)" },
+  ctaLinkSecondary: { display: "inline-flex", alignItems: "center", justifyContent: "center", background: "rgba(255,255,255,0.12)", color: "#fff", textDecoration: "none", border: "1px solid rgba(255,255,255,0.2)", borderRadius: 999, padding: "9px 16px", fontFamily: "var(--font-body)", fontSize: 13, fontWeight: 600 },
   metaLabel: { fontFamily: "var(--font-body)", fontSize: 11, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--color-stone-aa)", marginBottom: 5 },
   metaVal: { fontFamily: "var(--font-body)", fontSize: 14, color: "var(--color-charcoal)", fontWeight: 500, lineHeight: 1.5 },
   constraintLabel: { fontFamily: "var(--font-body)", fontSize: 11, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--color-stone-aa)", alignSelf: "center", marginRight: 4 },
@@ -747,8 +799,13 @@ Object.assign(window, { Work, ProjectCard, ProjectModal });
 /* ---- components/MindMap.jsx ---- */
 (function () {
 const MM_CSS = `
+  /* Rule: mobile screens must never rely on absolute coordinate overlap. Below 760px,
+     overview nodes revert to a stacked document flow so each card remains readable and separated. */
   .mm-stage{position:relative;width:100%;height:100vh;min-height:500px;overflow:hidden;
     background:var(--color-cloud);font-family:var(--font-body);}
+  .mm-stage.mobile-safe{overflow-y:auto;height:auto;min-height:100vh;padding:22px 18px 52px;}
+  .mm-overview-mobile{position:relative;display:flex;flex-direction:column;align-items:center;gap:16px;
+    width:min(100%, 420px);margin:0 auto;padding-top:55px;z-index:20;}
   .mm-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:5;}
   .mm-branch{stroke:var(--branch-aa);stroke-width:1.5;vector-effect:non-scaling-stroke;
     transition:stroke .4s ease,opacity .4s ease,stroke-width .4s ease;}
@@ -973,13 +1030,25 @@ const MM_CSS = `
   }
 `;
 function layoutPositions(layout) {
+  const baseTree = [{ x: 15, y: 58 }, { x: 35, y: 58 }, { x: 52, y: 26 }, { x: 68, y: 58 }, { x: 85, y: 58 }];
+  const baseConstellation = [{ x: 18, y: 24 }, { x: 82, y: 20 }, { x: 27, y: 78 }, { x: 72, y: 76 }, { x: 50, y: 18 }];
+  const radialCenter = { x: 50, y: 50 };
+  const radialRadius = 33;
+  const radialAnglesDeg = [198, -18, 126, 54, -90];
+  const baseRadial = radialAnglesDeg.map((deg) => {
+    const radians = deg * Math.PI / 180;
+    return {
+      x: radialCenter.x + radialRadius * Math.cos(radians),
+      y: radialCenter.y + radialRadius * Math.sin(radians)
+    };
+  });
   if (layout === "tree") {
-    return { center: { x: 50, y: 15 }, nodes: [{ x: 15, y: 60 }, { x: 38.3, y: 60 }, { x: 61.7, y: 60 }, { x: 85, y: 60 }] };
+    return { center: { x: 50, y: 18 }, nodes: baseTree };
   }
   if (layout === "constellation") {
-    return { center: { x: 47, y: 49 }, nodes: [{ x: 18, y: 24 }, { x: 82, y: 20 }, { x: 27, y: 80 }, { x: 76, y: 74 }] };
+    return { center: { x: 47, y: 49 }, nodes: baseConstellation };
   }
-  return { center: { x: 50, y: 50 }, nodes: [{ x: 24, y: 28 }, { x: 76, y: 28 }, { x: 24, y: 72 }, { x: 76, y: 72 }] };
+  return { center: radialCenter, nodes: baseRadial };
 }
 const CHILD_CARD_H_PX = 143;
 const CHILD_CARD_W_PX = 186;
@@ -1066,13 +1135,14 @@ function Branches({ pos, activeIdx, layout, drill, drillOrigin, drillChildren })
     (c, i) => /* @__PURE__ */ React.createElement("line", { key: "c" + i, className: "mm-childbranch", x1: drillOrigin.x, y1: drillOrigin.y, x2: c.x, y2: c.y })
   ));
 }
-function CenterNode({ pos, dim, hidden, onAbout }) {
+function CenterNode({ pos, dim, hidden, onAbout, mobile }) {
   const P = window.PROFILE;
+  const centerStyle = mobile ? { left: "auto", top: "auto", transform: "none", position: "relative", margin: "0 auto", gap: "18px" } : { left: pos.center.x + "%", top: pos.center.y + "%", gap: "24px" };
   return /* @__PURE__ */ React.createElement(
     "div",
     {
       className: "mm-center" + (dim ? " dim" : "") + (hidden ? " hidden" : ""),
-      style: { left: pos.center.x + "%", top: pos.center.y + "%", gap: "24px" },
+      style: centerStyle,
       onClick: (e) => {
         e.stopPropagation();
         onAbout();
@@ -1090,14 +1160,15 @@ function CenterNode({ pos, dim, hidden, onAbout }) {
     /* @__PURE__ */ React.createElement("div", { className: "mm-center-name", style: { backgroundColor: "#FFFFFF", padding: "12px", borderRadius: "8px" } }, /* @__PURE__ */ React.createElement("span", { style: { backgroundColor: "#FFFFFF", borderRadius: "4px" } }, /* @__PURE__ */ React.createElement("b", null, P.name), " ", P.role))
   );
 }
-function SpokeNode({ spoke, style, state, onClick, staticFlow }) {
+function SpokeNode({ spoke, style, state, onClick, staticFlow, mobile }) {
   const pc = spoke.projectIds.length;
   const meta = pc > 0 ? `${pc} project${pc > 1 ? "s" : ""}` : "In progress";
+  const nodeStyle = mobile ? { position: "relative", left: "auto", top: "auto", transform: "none", width: "min(320px, 86vw)", margin: "0 auto" } : style;
   return /* @__PURE__ */ React.createElement(
     "button",
     {
       className: "mm-node" + (staticFlow ? " static" : "") + (state === "active" ? " active" : "") + (state === "dim" ? " dim" : "") + (state === "hidden" ? " hidden" : ""),
-      style,
+      style: nodeStyle,
       onClick: (e) => {
         e.stopPropagation();
         onClick();
@@ -1145,6 +1216,7 @@ function MindMap({ layout, reveal, onAbout }) {
   const [active, setActive] = React.useState(null);
   const [project, setProject] = React.useState(null);
   const { w: width, h: height } = useViewportSize();
+  const mobile = width <= 760;
   const pos = layoutPositions(layout);
   const spokes = window.SPOKES;
   const activeIdx = active ? spokes.findIndex((s) => s.id === active) : null;
@@ -1170,10 +1242,13 @@ function MindMap({ layout, reveal, onAbout }) {
     setActive(null);
   }, [layout, reveal]);
   const close = () => setActive(null);
-  return /* @__PURE__ */ React.createElement("div", { className: "mm-stage", onClick: close }, /* @__PURE__ */ React.createElement("style", null, MM_CSS), drilling ? /* @__PURE__ */ React.createElement("button", { className: "mm-back", onClick: (e) => {
+  return /* @__PURE__ */ React.createElement("div", { className: "mm-stage" + (mobile ? " mobile-safe" : ""), onClick: close }, /* @__PURE__ */ React.createElement("style", null, MM_CSS), mobile && !activeSpoke && /* @__PURE__ */ React.createElement("div", { className: "mm-overview-mobile", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement(CenterNode, { pos, onAbout, mobile: true }), spokes.map((s, i) => {
+    const state = "idle";
+    return /* @__PURE__ */ React.createElement(SpokeNode, { key: s.id, spoke: s, state, mobile: true, onClick: () => setActive(active === s.id ? null : s.id) });
+  })), !mobile && (drilling ? /* @__PURE__ */ React.createElement("button", { className: "mm-back", onClick: (e) => {
     e.stopPropagation();
     close();
-  } }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "arrow-left" }), " All areas") : /* @__PURE__ */ React.createElement("div", { className: "mm-head" }, /* @__PURE__ */ React.createElement("div", { className: "wm" }, window.PROFILE.name, /* @__PURE__ */ React.createElement("i", null, ".")), /* @__PURE__ */ React.createElement("div", { className: "ov" }, "Product Designer \xB7 Portfolio")), /* @__PURE__ */ React.createElement(
+  } }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "arrow-left" }), " All areas") : /* @__PURE__ */ React.createElement("div", { className: "mm-head" }, /* @__PURE__ */ React.createElement("div", { className: "wm" }, window.PROFILE.name, /* @__PURE__ */ React.createElement("i", null, ".")), /* @__PURE__ */ React.createElement("div", { className: "ov" }, "Product Designer \xB7 Portfolio"))), !mobile && /* @__PURE__ */ React.createElement(
     Branches,
     {
       pos,
@@ -1183,11 +1258,11 @@ function MindMap({ layout, reveal, onAbout }) {
       drillOrigin: !narrowDrill && dl ? dl.origin : null,
       drillChildren: !narrowDrill && dl ? dl.children : null
     }
-  ), /* @__PURE__ */ React.createElement(CenterNode, { pos, dim: mode === "panel", hidden: mode === "expand", onAbout }), !narrowDrill && spokes.map((s, i) => {
+  ), !mobile && /* @__PURE__ */ React.createElement(CenterNode, { pos, dim: mode === "panel", hidden: mode === "expand", onAbout }), !mobile && !narrowDrill && spokes.map((s, i) => {
     const n = pos.nodes[i];
     let state = "idle";
     if (mode !== "overview") state = s.id === active ? "active" : mode === "expand" ? "hidden" : "dim";
-    const style = mode === "expand" && s.id === active ? { left: dl.parent.x + "%", top: dl.parent.y + "%" } : { left: n.x + "%", top: n.y + "%" };
+    const style = mode === "expand" && s.id === active && dl && dl.parent ? { left: dl.parent.x + "%", top: dl.parent.y + "%" } : { left: n.x + "%", top: n.y + "%" };
     return /* @__PURE__ */ React.createElement(
       SpokeNode,
       {
@@ -1213,10 +1288,10 @@ function MindMap({ layout, reveal, onAbout }) {
         key: c.key,
         child: c,
         onOpenProject: setProject,
-        style: { left: dl.children[i].x + "%", top: dl.children[i].y + "%" }
+        style: dl && dl.children && dl.children[i] ? { left: dl.children[i].x + "%", top: dl.children[i].y + "%" } : void 0
       }
     )
-  ), drilling && !narrowDrill && children.length === 0 && /* @__PURE__ */ React.createElement("div", { className: "mm-child", style: { left: dl.children[0].x + "%", top: dl.children[0].y + "%" } }, /* @__PURE__ */ React.createElement("div", { className: "mm-cempty" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "sparkles" }), /* @__PURE__ */ React.createElement("div", { className: "et" }, "Work in progress"), /* @__PURE__ */ React.createElement("p", null, "New case studies in this area are on the way. Open ", /* @__PURE__ */ React.createElement("b", null, "About me"), " for the full picture."))), narrowDrill && /* @__PURE__ */ React.createElement("div", { className: "mm-drill-narrow", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement(SpokeNode, { spoke: activeSpoke, state: "active", staticFlow: true, onClick: () => {
+  ), drilling && !narrowDrill && children.length === 0 && dl && dl.children && dl.children[0] && /* @__PURE__ */ React.createElement("div", { className: "mm-child", style: { left: dl.children[0].x + "%", top: dl.children[0].y + "%" } }, /* @__PURE__ */ React.createElement("div", { className: "mm-cempty" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "sparkles" }), /* @__PURE__ */ React.createElement("div", { className: "et" }, "Work in progress"), /* @__PURE__ */ React.createElement("p", null, "New case studies in this area are on the way. Open ", /* @__PURE__ */ React.createElement("b", null, "About me"), " for the full picture."))), narrowDrill && /* @__PURE__ */ React.createElement("div", { className: "mm-drill-narrow", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement(SpokeNode, { spoke: activeSpoke, state: "active", staticFlow: true, onClick: () => {
   } }), /* @__PURE__ */ React.createElement("div", { className: "mm-drill-blurb narrow static" }, /* @__PURE__ */ React.createElement("div", { className: "lead" }, "In this area"), /* @__PURE__ */ React.createElement("p", null, activeSpoke.blurb)), children.length > 0 ? children.map(
     (c) => /* @__PURE__ */ React.createElement(React.Fragment, { key: c.key }, /* @__PURE__ */ React.createElement("span", { className: "mm-drill-connector", "aria-hidden": "true" }), /* @__PURE__ */ React.createElement(ChildNode, { child: c, onOpenProject: setProject, staticFlow: true }))
   ) : /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("span", { className: "mm-drill-connector", "aria-hidden": "true" }), /* @__PURE__ */ React.createElement("div", { className: "mm-cempty static" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "sparkles" }), /* @__PURE__ */ React.createElement("div", { className: "et" }, "Work in progress"), /* @__PURE__ */ React.createElement("p", null, "New case studies in this area are on the way. Open ", /* @__PURE__ */ React.createElement("b", null, "About me"), " for the full picture.")))), mode === "panel" && /* @__PURE__ */ React.createElement("div", { className: "mm-side", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement(ExpansionContent, { spoke: activeSpoke, onOpenProject: setProject, onClose: close })), window.ProjectModal && /* @__PURE__ */ React.createElement(window.ProjectModal, { p: project, onClose: () => setProject(null) }));
@@ -1341,53 +1416,9 @@ Object.assign(window, { AboutPanel });
 
 /* ---- src/app.jsx ---- */
 (function () {
-function PersonalProjectsSection() {
-  const projects = [
-    {
-      name: "Volleyball Lineup Planner",
-      summary: "A local-first lineup builder for coaches and captains to create teams, assign players, manage availability, and test rotations quickly.",
-      stack: "React \xB7 TypeScript \xB7 Vite",
-      demo: "https://annabelleclarklepard.github.io/Volleyball/",
-      repo: "https://github.com/AnnabelleClarkLepard/Volleyball"
-    },
-    {
-      name: "UX Design Process",
-      summary: "Portfolio exploration focused on structuring complex workflows into simple, high-confidence user experiences for operational tools.",
-      stack: "UX strategy \xB7 Prototyping \xB7 Design systems",
-      demo: "#",
-      repo: "#"
-    },
-    {
-      name: "Interactive Product Thinking",
-      summary: "Work centered on translating ambiguous operational requirements into clear user flows, accessible interfaces, and trusted product decisions.",
-      stack: "Product design \xB7 Research \xB7 AI workflows",
-      demo: "#",
-      repo: "#"
-    }
-  ];
-  return /* @__PURE__ */ React.createElement("section", { id: "personal-projects", style: { background: "#fff", padding: "5rem 2rem 6rem" } }, /* @__PURE__ */ React.createElement("div", { style: { maxWidth: 1200, margin: "0 auto" } }, /* @__PURE__ */ React.createElement("div", { style: { fontFamily: "var(--font-body)", fontSize: 13, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--color-teal)", fontWeight: 500 } }, "Personal Projects"), /* @__PURE__ */ React.createElement("h2", { style: { fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "var(--color-navy)", margin: "14px 0 0", letterSpacing: "-0.02em" } }, "Product ideas shaped for clarity, speed, and trust"), /* @__PURE__ */ React.createElement("div", { style: { width: 48, height: 3, background: "var(--color-teal)", margin: "18px 0 32px" } }), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24 } }, projects.map((project) => /* @__PURE__ */ React.createElement("article", { key: project.name, style: { background: "var(--color-cloud)", border: "1px solid var(--color-silver)", borderRadius: 16, padding: 20, boxShadow: "var(--shadow-xs)" } }, /* @__PURE__ */ React.createElement("div", { style: { display: "inline-block", background: "var(--color-pale-green)", color: "var(--color-teal)", borderRadius: 999, padding: "6px 10px", fontFamily: "var(--font-body)", fontSize: 11, fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase" } }, project.stack), /* @__PURE__ */ React.createElement("h3", { style: { fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: 24, color: "var(--color-navy)", margin: "18px 0 10px", letterSpacing: "-0.01em" } }, project.name), /* @__PURE__ */ React.createElement("p", { style: { margin: 0, fontFamily: "var(--font-body)", fontSize: 15, lineHeight: 1.7, color: "var(--color-graphite)" } }, project.summary), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 12, flexWrap: "wrap", marginTop: 22 } }, project.demo !== "#" && /* @__PURE__ */ React.createElement(
-    "a",
-    {
-      href: project.demo,
-      target: "_blank",
-      rel: "noopener noreferrer",
-      style: { background: "var(--color-teal)", color: "#fff", textDecoration: "none", padding: "10px 16px", borderRadius: 8, fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: 14 }
-    },
-    "Live demo"
-  ), project.repo !== "#" && /* @__PURE__ */ React.createElement(
-    "a",
-    {
-      href: project.repo,
-      target: "_blank",
-      rel: "noopener noreferrer",
-      style: { background: "#fff", color: "var(--color-slate)", border: "1px solid var(--color-silver)", textDecoration: "none", padding: "10px 16px", borderRadius: 8, fontFamily: "var(--font-heading)", fontWeight: 600, fontSize: 14 }
-    },
-    "GitHub"
-  )))))));
-}
 function App() {
   const [aboutOpen, setAboutOpen] = React.useState(false);
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(MindMap, { layout: "radial", reveal: "expand", onAbout: () => setAboutOpen(true) }), /* @__PURE__ */ React.createElement(PersonalProjectsSection, null), /* @__PURE__ */ React.createElement(AboutPanel, { open: aboutOpen, onClose: () => setAboutOpen(false) }));
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(MindMap, { layout: "radial", reveal: "expand", onAbout: () => setAboutOpen(true) }), /* @__PURE__ */ React.createElement(AboutPanel, { open: aboutOpen, onClose: () => setAboutOpen(false) }));
 }
 ReactDOM.createRoot(document.getElementById("app")).render(/* @__PURE__ */ React.createElement(App, null));
 

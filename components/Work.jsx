@@ -95,6 +95,16 @@ function ProjectModal({ p, onClose }) {
             <span style={{ ...workStyles.badge, background: 'rgba(125,191,170,0.18)', color: 'var(--color-mint)', border: '1px solid rgba(125,191,170,0.3)' }}>{p.tag}</span>
             <h2 style={modalStyles.title}>{p.title}</h2>
             <p style={modalStyles.discipline}>{p.discipline}</p>
+            {(p.website || p.demo) && (
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 18 }}>
+                {p.website && (
+                  <a href={p.website} target="_blank" rel="noreferrer" style={modalStyles.ctaLinkPrimary}>GitHub</a>
+                )}
+                {p.demo && (
+                  <a href={p.demo} target="_blank" rel="noreferrer" style={modalStyles.ctaLinkSecondary}>Demo</a>
+                )}
+              </div>
+            )}
           </div>
           {p.image && (
             <div className="modal-hero-thumb" style={modalStyles.heroThumb}>
@@ -230,6 +240,8 @@ const modalStyles = {
   figFrame: { background: 'var(--color-pale-blue)', border: '1px solid var(--color-silver)', borderRadius: 12, padding: 18, display: 'flex', justifyContent: 'center' },
   figImg: { maxWidth: '100%', maxHeight: 460, objectFit: 'contain', borderRadius: 6, display: 'block' },
   figCap: { fontFamily: 'var(--font-body)', fontSize: 13, color: 'var(--color-stone-aa)', lineHeight: 1.6, margin: '12px 2px 0', textAlign: 'center', maxWidth: '64ch', marginLeft: 'auto', marginRight: 'auto' },
+  ctaLinkPrimary: { display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'var(--color-mint)', color: '#173c3b', textDecoration: 'none', borderRadius: 999, padding: '9px 16px', fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 600, boxShadow: 'var(--shadow-xs)' },
+  ctaLinkSecondary: { display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(255,255,255,0.12)', color: '#fff', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 999, padding: '9px 16px', fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 600 },
   metaLabel: { fontFamily: 'var(--font-body)', fontSize: 11, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--color-stone-aa)', marginBottom: 5 },
   metaVal: { fontFamily: 'var(--font-body)', fontSize: 14, color: 'var(--color-charcoal)', fontWeight: 500, lineHeight: 1.5 },
   constraintLabel: { fontFamily: 'var(--font-body)', fontSize: 11, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--color-stone-aa)', alignSelf: 'center', marginRight: 4 },
