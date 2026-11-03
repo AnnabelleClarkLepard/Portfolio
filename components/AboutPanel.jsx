@@ -134,7 +134,7 @@ function AboutPanel({ open, onClose }) {
               I work end to end and beyond the interface: research and flow mapping, design systems
               and accessibility, SQL and API alignment, prototyping in code, and the project
               management that keeps non-technical and engineering teams moving together. Increasingly,
-              that means reshaping how design and delivery happen with AI, without losing rigor.
+              that means reshaping how design and delivery happen with AI while keeping rigor intact.
             </p>
           </section>
 

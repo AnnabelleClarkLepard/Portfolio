@@ -63,7 +63,7 @@ window.PROJECTS = [
   {
     id: "design-system",
     tag: "Design Systems",
-    title: "Accessible Design System",
+    title: "Accessible Design System Rollout",
     blurb: "A shared source of truth for a product area that was getting messy and inconsistent.",
     discipline: "Design systems that keep the UI consistent, make the work easier to ship, and bake accessibility in from the start.",
     role: "Product Designer \xB7 Project Manager",
@@ -105,7 +105,7 @@ window.PROJECTS = [
   {
     id: "volleyball-lineup-planner",
     tag: "Personal Projects",
-    title: "Volleyball Rotation Tool",
+    title: "Volleyball Rotation Planner",
     blurb: "A quick, mobile-first tool for sharing the lineup with my team without the usual group chat chaos.",
     discipline: "A lightweight product built for the real problem of a captain needing to manage availability, rotations, and communication without friction.",
     role: "Team captain + product designer + frontend builder",
@@ -150,7 +150,7 @@ window.PROJECTS = [
   {
     id: "merchant-statements",
     tag: "Financial Systems",
-    title: "Merchant Statements",
+    title: "Merchant Statement Redesign",
     blurb: "A clearer way to explain the numbers behind a payment statement without making the user decode the system themselves.",
     discipline: "Financial tools that have to be accurate, trusted, and easy to understand for people who are not living in the data every day.",
     role: "Product Designer \xB7 Product Manager \xB7 Project Manager",
@@ -192,7 +192,7 @@ window.PROJECTS = [
   {
     id: "queueing-system",
     tag: "Performance & Security",
-    title: "High-Volume Queueing",
+    title: "High-Volume Registration Queueing",
     blurb: "A waiting-room experience built to stay calm and legible when traffic spikes and people are stressed.",
     discipline: "Performance UX where the system has to stay clear under pressure and the user still needs to feel in control.",
     role: "Product Designer \xB7 Operations Coordinator",
@@ -235,7 +235,7 @@ window.PROJECTS = [
     id: "fundraising-payments",
     thumbIcon: "hand-coins",
     tag: "Financial Systems",
-    title: "Fundraising & Donations Payment Experience",
+    title: "Donation Lifecycle Redesign",
     blurb: "A full-lifecycle redesign of viewing, creating, editing, and refunding donations, built for trust and reversibility.",
     discipline: "High-stakes financial workflows made clear, trustworthy, and error-resistant, making donating and fundraising a breeze.",
     role: "Product Designer",
@@ -280,7 +280,7 @@ window.PROJECTS = [
   {
     id: "registration-mobile",
     tag: "Registration",
-    title: "Mobile-First Registration Experience",
+    title: "Mobile Registration Usability Overhaul",
     blurb: "Meeting registrants on the devices they actually use, a systemic usability pass across the registration portal.",
     discipline: "Reducing friction in high-volume, time-sensitive registration journeys by designing for how, and where, registrants actually show up.",
     role: "Product Designer",
@@ -324,7 +324,7 @@ window.PROJECTS = [
     id: "waitlist-decision",
     thumbIcon: "route",
     tag: "Registration",
-    title: "Guided Waitlist Decision Flow",
+    title: "Waitlist Decision Flow Redesign",
     blurb: "Turning an ambiguous decision point into a guided two-path flow for registrants choosing what to do when a dependent lands on the waitlist.",
     discipline: "Reducing friction in high-stakes, time-sensitive registration moments, where a confusing decision can cost a family their spot.",
     role: "Product Designer",
@@ -367,7 +367,7 @@ window.PROJECTS = [
     id: "auth-security",
     thumbIcon: "shield-check",
     tag: "Security",
-    title: "Authentication & Security Recovery",
+    title: "Authentication Recovery and Account Security",
     blurb: "Designing recoverable moments in high-anxiety login and security flows, solving the real problem, not just the symptom.",
     discipline: "Where security infrastructure and UX intersect, designing calm, recoverable moments in high-anxiety flows.",
     role: "Product Designer",
@@ -421,9 +421,9 @@ window.PROJECTS = [
     id: "forms-strategy",
     thumbIcon: "file-check-2",
     tag: "Strategy",
-    title: "Forms & Staff Workflow Strategy",
+    title: "Forms Platform and Source-of-Truth Strategy",
     blurb: "A structured evaluation of form and e-signature tooling, and a clearer source-of-truth model for staff form data.",
-    discipline: "Strategic, systems-level solution design and vendor evaluation for internal tooling, analyzing downstream operational impact, not just features.",
+    discipline: "Solution design and vendor evaluation for internal tooling, focused on downstream operational impact instead of feature checklists.",
     role: "Product Designer \xB7 Solution Design",
     context: "Vendor evaluation \xB7 Systems design \xB7 Integration",
     constraints: ["Fragmentation risk across tools", "Iframe integration limits", "API sync requirements", "Real staff application volume"],
@@ -464,9 +464,9 @@ window.PROJECTS = [
     id: "outbox",
     thumbIcon: "send",
     tag: "Communication",
-    title: "Outbox, Client Communications Tool",
+    title: "Outbox Communications Workflow Redesign",
     blurb: "Faster scanning and clearer status for the tool staff use to send and track communications to the people they serve.",
-    discipline: "Staff-facing tooling whose improvements directly shape the client-facing communication experience, usability with downstream customer impact.",
+    discipline: "Staff-facing tooling where usability directly shapes client-facing communication quality and speed.",
     role: "Product Designer",
     context: "Figma \xB7 Staff tooling \xB7 Reporting",
     constraints: ["High volume of outgoing communications", "Staff usability \u2194 customer impact", "Status legibility (sent/pending/failed)", "Reporting & visibility needs"],
@@ -507,9 +507,9 @@ window.PROJECTS = [
     id: "ai-leadership",
     thumbIcon: "sparkles",
     tag: "AI Leadership",
-    title: "Leading AI Adoption Across Product Teams",
+    title: "AI Adoption Program for Product Teams",
     blurb: "Moving three product teams from AI-skeptical to AI-fluent, leading organizational change in how teams work, not just an artifact.",
-    discipline: "Leading responsible, mature AI adoption across product teams, organizational change and process redesign, grounded in firsthand practice.",
+    discipline: "Responsible AI adoption across product teams through behavior change, process redesign, and hands-on practice.",
     role: "AI Transformation Lead \xB7 Product Designer",
     context: "Enablement \xB7 SDLC redesign \xB7 Change management",
     constraints: ["AI-skeptical starting point", "Responsible, embedded use over novelty", "Cross-team, cross-brand differences", "Adoption as behavior change, not a one-off"],
@@ -552,9 +552,9 @@ window.PROJECTS = [
     id: "research-documentation",
     thumbIcon: "search",
     tag: "Research & Practice",
-    title: "Research, Analysis & Documentation",
+    title: "Research Synthesis and Documentation Practice",
     blurb: "Using data synthesis and clear writing to move from raw backlog to actionable insight, the connective tissue beneath the case studies.",
-    discipline: "Using data and writing to drive product decisions, grounding design in behavior, and turning institutional knowledge into reusable team resources.",
+    discipline: "Data-informed product decision-making through synthesis, analysis, and documentation that teams can reuse.",
     role: "Product Designer \xB7 Research",
     context: "Data analysis \xB7 Component audits \xB7 Documentation",
     constraints: ["Large, noisy request backlogs", "Assumption-driven decisions", "UI & design-system fragmentation", "Scattered institutional knowledge"],
@@ -605,7 +605,7 @@ window.SPOKES = [
     label: "Financial Systems",
     sub: "Trust, accuracy & billing",
     icon: "landmark",
-    blurb: "Statements, reconciliation, donations, and refunds, where accuracy, traceability, and reversibility are what build trust.",
+    blurb: "Statements, reconciliation, donations, and refunds where accuracy, traceability, and reversibility build trust.",
     projectIds: ["merchant-statements", "fundraising-payments"],
     expertise: ["Financial Systems & Payments"]
   },
@@ -614,7 +614,7 @@ window.SPOKES = [
     label: "High-Stakes Journeys",
     sub: "Registration & security",
     icon: "gauge",
-    blurb: "High-volume, time-sensitive journeys, queueing, registration, and security recovery, kept calm and usable under pressure.",
+    blurb: "High-volume journeys in queueing, registration, and security recovery designed to stay calm and usable under pressure.",
     projectIds: ["queueing-system", "registration-mobile", "waitlist-decision", "auth-security"],
     expertise: ["Performance & High-Stakes UX"]
   },
@@ -623,7 +623,7 @@ window.SPOKES = [
     label: "Operational Workflows",
     sub: "Client tools & staff operations",
     icon: "megaphone",
-    blurb: "The tools our clients rely on to manage hiring, communications, and service operations, clear, legible, and built for real workload.",
+    blurb: "Client-facing operational tools for hiring, communications, and service work built to stay clear under real workload.",
     projectIds: ["forms-strategy", "outbox"],
     expertise: ["Client Communication & Workflow Tooling"]
   },
@@ -632,7 +632,7 @@ window.SPOKES = [
     label: "Product Platforms",
     sub: "Design systems & leadership",
     icon: "layout-grid",
-    blurb: "Design systems, AI adoption, and research infrastructure, creating clarity, consistency, and a better delivery rhythm across product teams.",
+    blurb: "Design systems, AI adoption, and research infrastructure that improve clarity, consistency, and delivery rhythm across teams.",
     projectIds: ["design-system", "ai-leadership", "research-documentation"],
     expertise: ["AI Transformation Leadership", "Accessible Design Systems", "Research, Analysis & Documentation"]
   },
@@ -664,18 +664,18 @@ window.CAREER = [
     roles: [
       {
         title: "Product Designer, AI Transformation Lead",
-        period: "Mar 2025 \u2013 Present \xB7 1 yr 5 mos",
+        period: "Mar 2025 to Present \xB7 1 yr 5 mos",
         skills: "Product Design \xB7 Information Architecture \xB7 AI Transformation \xB7 Prototyping",
         current: true
       },
       {
         title: "Senior Data Specialist",
-        period: "Jun 2024 \u2013 Apr 2025 \xB7 11 mos",
+        period: "Jun 2024 to Apr 2025 \xB7 11 mos",
         skills: "Data Analysis \xB7 Technical Communication \xB7 SQL Querying \xB7 Project Management"
       },
       {
         title: "Software & Data Specialist",
-        period: "Sep 2022 \u2013 Jun 2024 \xB7 1 yr 10 mos",
+        period: "Sep 2022 to Jun 2024 \xB7 1 yr 10 mos",
         skills: "Technical Communication \xB7 B2B2C \xB7 API Integration \xB7 Journey & Flow Mapping"
       }
     ]
@@ -1408,7 +1408,7 @@ function AboutPanel({ open, onClose }) {
   }, [open]);
   if (!open) return null;
   const P = window.PROFILE;
-  return /* @__PURE__ */ React.createElement("div", { className: "ab-overlay", onClick: onClose }, /* @__PURE__ */ React.createElement("style", null, AB_CSS), /* @__PURE__ */ React.createElement("div", { className: "ab-sheet", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement("button", { className: "ab-x", "aria-label": "Close", onClick: onClose }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "x" })), /* @__PURE__ */ React.createElement("div", { className: "ab-hero" }, /* @__PURE__ */ React.createElement("img", { src: "assets/headshot.png", alt: P.name }), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "ov" }, "About me"), /* @__PURE__ */ React.createElement("h2", null, P.name), /* @__PURE__ */ React.createElement("div", { className: "role" }, P.role, " \xB7 ", P.location), /* @__PURE__ */ React.createElement("div", { className: "ab-spec" }, P.specialties.map((s) => /* @__PURE__ */ React.createElement("span", { key: s }, s))))), /* @__PURE__ */ React.createElement("div", { className: "ab-body" }, /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "How I work")), /* @__PURE__ */ React.createElement("p", { className: "ab-p" }, "I'm a product design leader specialized in complex systems, financial workflows, payments, registration, and accessible platforms at scale. My favorite problems sit where legacy constraints, real data, and human needs collide, and my job is to make the result feel clear, accurate, and trustworthy."), /* @__PURE__ */ React.createElement("p", { className: "ab-p" }, "I work end to end and beyond the interface: research and flow mapping, design systems and accessibility, SQL and API alignment, prototyping in code, and the project management that keeps non-technical and engineering teams moving together. Increasingly, that means reshaping how design and delivery happen with AI, without losing rigor.")), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Expertise")), /* @__PURE__ */ React.createElement("div", { className: "ab-exp-grid" }, window.EXPERTISE.map((e) => /* @__PURE__ */ React.createElement("div", { key: e.h, className: "ab-exp" }, /* @__PURE__ */ React.createElement("div", { className: "eico" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": e.icon })), /* @__PURE__ */ React.createElement("h4", null, e.h), /* @__PURE__ */ React.createElement("p", null, e.p))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Skills")), /* @__PURE__ */ React.createElement("div", { className: "ab-skills" }, window.SKILLS.map((g) => /* @__PURE__ */ React.createElement("div", { key: g.h }, /* @__PURE__ */ React.createElement("div", { className: "ab-skill-h" }, g.h), /* @__PURE__ */ React.createElement("div", { className: "ab-pills" }, g.items.map((s) => /* @__PURE__ */ React.createElement("span", { key: s, className: "ab-pill" }, s))))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Experience")), window.CAREER.map((c) => /* @__PURE__ */ React.createElement("div", { key: c.company, className: "ab-timeline" }, /* @__PURE__ */ React.createElement("div", { className: "ab-company" }, /* @__PURE__ */ React.createElement("h4", null, c.company), /* @__PURE__ */ React.createElement("div", { className: "meta" }, c.location, " \xB7 ", c.span)), c.roles.map((r) => /* @__PURE__ */ React.createElement("div", { key: r.title, className: "ab-role" + (r.current ? " current" : "") }, /* @__PURE__ */ React.createElement("h5", null, r.title), /* @__PURE__ */ React.createElement("div", { className: "per" }, r.period), /* @__PURE__ */ React.createElement("div", { className: "sk" }, r.skills)))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Get in touch")), /* @__PURE__ */ React.createElement("div", { className: "ab-contact" }, /* @__PURE__ */ React.createElement("a", { className: "ab-ch", href: `mailto:${P.email}` }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "mail" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Email"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.email))), /* @__PURE__ */ React.createElement("a", { className: "ab-ch", href: P.linkedinUrl, target: "_blank", rel: "noopener noreferrer" }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "linkedin" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "LinkedIn"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.linkedin))), /* @__PURE__ */ React.createElement("div", { className: "ab-ch", style: { cursor: "default" } }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "map-pin" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Location"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.location))), /* @__PURE__ */ React.createElement("div", { className: "ab-ch", style: { cursor: "default" } }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "briefcase" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Currently"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, "Product Designer, AI Transformation Lead"))))))));
+  return /* @__PURE__ */ React.createElement("div", { className: "ab-overlay", onClick: onClose }, /* @__PURE__ */ React.createElement("style", null, AB_CSS), /* @__PURE__ */ React.createElement("div", { className: "ab-sheet", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement("button", { className: "ab-x", "aria-label": "Close", onClick: onClose }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "x" })), /* @__PURE__ */ React.createElement("div", { className: "ab-hero" }, /* @__PURE__ */ React.createElement("img", { src: "assets/headshot.png", alt: P.name }), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "ov" }, "About me"), /* @__PURE__ */ React.createElement("h2", null, P.name), /* @__PURE__ */ React.createElement("div", { className: "role" }, P.role, " \xB7 ", P.location), /* @__PURE__ */ React.createElement("div", { className: "ab-spec" }, P.specialties.map((s) => /* @__PURE__ */ React.createElement("span", { key: s }, s))))), /* @__PURE__ */ React.createElement("div", { className: "ab-body" }, /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "How I work")), /* @__PURE__ */ React.createElement("p", { className: "ab-p" }, "I'm a product design leader specialized in complex systems, financial workflows, payments, registration, and accessible platforms at scale. My favorite problems sit where legacy constraints, real data, and human needs collide, and my job is to make the result feel clear, accurate, and trustworthy."), /* @__PURE__ */ React.createElement("p", { className: "ab-p" }, "I work end to end and beyond the interface: research and flow mapping, design systems and accessibility, SQL and API alignment, prototyping in code, and the project management that keeps non-technical and engineering teams moving together. Increasingly, that means reshaping how design and delivery happen with AI while keeping rigor intact.")), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Expertise")), /* @__PURE__ */ React.createElement("div", { className: "ab-exp-grid" }, window.EXPERTISE.map((e) => /* @__PURE__ */ React.createElement("div", { key: e.h, className: "ab-exp" }, /* @__PURE__ */ React.createElement("div", { className: "eico" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": e.icon })), /* @__PURE__ */ React.createElement("h4", null, e.h), /* @__PURE__ */ React.createElement("p", null, e.p))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Skills")), /* @__PURE__ */ React.createElement("div", { className: "ab-skills" }, window.SKILLS.map((g) => /* @__PURE__ */ React.createElement("div", { key: g.h }, /* @__PURE__ */ React.createElement("div", { className: "ab-skill-h" }, g.h), /* @__PURE__ */ React.createElement("div", { className: "ab-pills" }, g.items.map((s) => /* @__PURE__ */ React.createElement("span", { key: s, className: "ab-pill" }, s))))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Experience")), window.CAREER.map((c) => /* @__PURE__ */ React.createElement("div", { key: c.company, className: "ab-timeline" }, /* @__PURE__ */ React.createElement("div", { className: "ab-company" }, /* @__PURE__ */ React.createElement("h4", null, c.company), /* @__PURE__ */ React.createElement("div", { className: "meta" }, c.location, " \xB7 ", c.span)), c.roles.map((r) => /* @__PURE__ */ React.createElement("div", { key: r.title, className: "ab-role" + (r.current ? " current" : "") }, /* @__PURE__ */ React.createElement("h5", null, r.title), /* @__PURE__ */ React.createElement("div", { className: "per" }, r.period), /* @__PURE__ */ React.createElement("div", { className: "sk" }, r.skills)))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Get in touch")), /* @__PURE__ */ React.createElement("div", { className: "ab-contact" }, /* @__PURE__ */ React.createElement("a", { className: "ab-ch", href: `mailto:${P.email}` }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "mail" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Email"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.email))), /* @__PURE__ */ React.createElement("a", { className: "ab-ch", href: P.linkedinUrl, target: "_blank", rel: "noopener noreferrer" }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "linkedin" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "LinkedIn"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.linkedin))), /* @__PURE__ */ React.createElement("div", { className: "ab-ch", style: { cursor: "default" } }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "map-pin" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Location"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.location))), /* @__PURE__ */ React.createElement("div", { className: "ab-ch", style: { cursor: "default" } }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "briefcase" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Currently"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, "Product Designer, AI Transformation Lead"))))))));
 }
 Object.assign(window, { AboutPanel });
 

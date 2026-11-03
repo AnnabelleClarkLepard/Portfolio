@@ -15,7 +15,7 @@ function Contact() {
           <div style={contactStyles.overline}>Contact</div>
           <h2 style={contactStyles.heading}>Let's connect.</h2>
           <p style={contactStyles.sub}>
-            Have a complex system that needs clarity, financial, operational, or accessible?
+            Have a complex system that needs clarity in financial, operational, or accessibility-heavy work?
             I read every message and reply within a couple of days.
           </p>
           <div style={contactStyles.channels}>
@@ -38,7 +38,7 @@ function Contact() {
             <div style={contactStyles.success}>
               <i data-lucide="check-circle" style={{ width: 36, height: 36, color: 'var(--color-mint)' }}></i>
               <div style={contactStyles.successT}>Message sent</div>
-              <p style={contactStyles.successP}>Thanks, {form.name || 'there'}, I'll be in touch soon.</p>
+              <p style={contactStyles.successP}>Thanks, {form.name || 'there'}. I will be in touch soon.</p>
             </div>
           ) : (
             <form onSubmit={submit} style={contactStyles.form}>
