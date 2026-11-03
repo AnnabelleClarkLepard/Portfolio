@@ -1,4 +1,4 @@
-/* About.jsx — bio with headshot + skills */
+/* About.jsx, bio with headshot + skills */
 function About() {
   const P = window.PROFILE;
   return (
@@ -15,7 +15,7 @@ function About() {
           <h2 style={aboutStyles.heading}>A bit about how I work.</h2>
           <div style={aboutStyles.bar}></div>
           <p style={aboutStyles.p}>
-            I'm a product design leader specialized in complex systems — financial workflows,
+            I'm a product design leader specialized in complex systems, financial workflows,
             payments, registration, and accessible platforms at scale. My favorite problems
             sit where legacy constraints, real data, and human needs collide, and my job is to
             make the result feel clear, accurate, and trustworthy.
@@ -24,7 +24,7 @@ function About() {
             I work end to end and beyond the interface: research and flow mapping, design systems
             and accessibility, SQL and API alignment, prototyping in code, and the project
             management that keeps non-technical and engineering teams moving together. Increasingly,
-            that means reshaping how design and delivery happen with AI — without losing rigor.
+            that means reshaping how design and delivery happen with AI, without losing rigor.
           </p>
           <div style={aboutStyles.skills}>
             {window.SKILLS.map((g) => (

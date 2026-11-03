@@ -236,19 +236,19 @@ window.PROJECTS = [
     thumbIcon: "hand-coins",
     tag: "Financial Systems",
     title: "Fundraising & Donations Payment Experience",
-    blurb: "A full-lifecycle redesign of viewing, creating, editing, and refunding donations \u2014 built for trust and reversibility.",
-    discipline: "High-stakes financial workflows made clear, trustworthy, and error-resistant \u2014 making donating and fundraising a breeze.",
+    blurb: "A full-lifecycle redesign of viewing, creating, editing, and refunding donations, built for trust and reversibility.",
+    discipline: "High-stakes financial workflows made clear, trustworthy, and error-resistant, making donating and fundraising a breeze.",
     role: "Product Designer",
     context: "Figma \xB7 Payments \xB7 B2B2C",
     constraints: ["Compliance & receipting weight", "Recurring vs. one-time logic", "Staff under time pressure", "Legacy transaction states"],
     accent: "var(--color-sage)",
     image: "assets/proj-fundraising-payments.jpeg",
-    imageCaption: "Edit a Donation modal \u2014 payment method, fund, campaign, and dedication details in one consistent, auditable structure.",
-    solution: "A redesign of the full donation lifecycle \u2014 viewing, creating, editing, and removing gifts \u2014 with clearer action labels, a consistent modal structure, and the right information (amount, donor intent, transaction state) surfaced at the right moment.",
+    imageCaption: "Edit a Donation modal, payment method, fund, campaign, and dedication details in one consistent, auditable structure.",
+    solution: "A redesign of the full donation lifecycle, viewing, creating, editing, and removing gifts, with clearer action labels, a consistent modal structure, and the right information (amount, donor intent, transaction state) surfaced at the right moment.",
     solutionPoints: [
       "Refund editing and status indicators reworked so refund workflows are auditable and reliable under time pressure.",
       "Distinct status patterns separate one-time from recurring gifts, resolving downstream reporting and receipting confusion.",
-      "Declined-payment messaging balances clarity with restraint \u2014 enough for users to self-correct without eroding trust."
+      "Declined-payment messaging balances clarity with restraint, enough for users to self-correct without eroding trust."
     ],
     problems: [
       { who: "The Donor", sub: "", t: "Confusing transaction states and refund status made it hard to know what had actually happened to a gift." },
@@ -262,11 +262,11 @@ window.PROJECTS = [
       "Reduced support burden around receipting and declined payments."
     ],
     process: [
-      "Mapped the full arc of a donation \u2014 view, create, edit, remove \u2014 to find where state and intent got lost.",
+      "Mapped the full arc of a donation, view, create, edit, remove, to find where state and intent got lost.",
       "Standardized modal structure (header, body, details, footer) and action labels across giving flows.",
       "Designed clearer status indicators for refunds, recurring gifts, and declined payments.",
       "Closed feature gaps for dedication and tribute giving so edge-case donors were first-class.",
-      "Contributed to payment-record IA \u2014 cardholder and payment-method presentation, dashboard structure \u2014 for teams managing records at scale."
+      "Contributed to payment-record IA, cardholder and payment-method presentation, dashboard structure, for teams managing records at scale."
     ],
     impact: [
       "Clearer financial outcomes and transaction states for donors and staff.",
@@ -281,15 +281,15 @@ window.PROJECTS = [
     id: "registration-mobile",
     tag: "Registration",
     title: "Mobile-First Registration Experience",
-    blurb: "Meeting registrants on the devices they actually use \u2014 a systemic usability pass across the registration portal.",
-    discipline: "Reducing friction in high-volume, time-sensitive registration journeys by designing for how \u2014 and where \u2014 registrants actually show up.",
+    blurb: "Meeting registrants on the devices they actually use, a systemic usability pass across the registration portal.",
+    discipline: "Reducing friction in high-volume, time-sensitive registration journeys by designing for how, and where, registrants actually show up.",
     role: "Product Designer",
     context: "Figma \xB7 Registration portal \xB7 Mobile-first",
     constraints: ["High-volume, time-sensitive journeys", "Mobile & desktop parity", "legacy flows and user habits", "Scope spanning many screens and flows"],
     accent: "var(--color-sky)",
     image: "assets/proj-registration-portal.jpeg",
-    imageCaption: "Registration portal \u2014 step-by-step registration flow with clear progress tracking.",
-    solution: "A systemic mobile usability pass across the registration portal \u2014 tightening alerts, spacing, card layouts, and scroll behavior so the experience holds up on the devices registrants actually use, not just desktop.",
+    imageCaption: "Registration portal, step-by-step registration flow with clear progress tracking.",
+    solution: "A systemic mobile usability pass across the registration portal, tightening alerts, spacing, card layouts, and scroll behavior so the experience holds up on the devices registrants actually use, not just desktop.",
     solutionPoints: [
       "Alerts, spacing, and card layouts standardized for consistent, scannable mobile presentation.",
       "Empty-cart scenarios redesigned so users are not left stuck mid-task on smaller screens.",
@@ -326,14 +326,14 @@ window.PROJECTS = [
     tag: "Registration",
     title: "Guided Waitlist Decision Flow",
     blurb: "Turning an ambiguous decision point into a guided two-path flow for registrants choosing what to do when a dependent lands on the waitlist.",
-    discipline: "Reducing friction in high-stakes, time-sensitive registration moments \u2014 where a confusing decision can cost a family their spot.",
+    discipline: "Reducing friction in high-stakes, time-sensitive registration moments, where a confusing decision can cost a family their spot.",
     role: "Product Designer",
     context: "Figma \xB7 Registration portal \xB7 Waitlist logic",
     constraints: ["Ambiguous decision points", "High-volume, time-sensitive journeys", "Multiple dependents per registration", "Legacy waitlist logic"],
     accent: "var(--color-sky)",
     image: "assets/proj-waitlist-decision.jpeg",
-    imageCaption: 'The guided waitlist decision \u2014 "What matters most to Bryanna?" \u2014 with clear session-vs-session-option requirement handling.',
-    solution: "A restructured waitlist flow that replaced a confusing decision point with a guided two-path model and clearer requirement handling \u2014 so a registrant with a waitlisted dependent always knows what to do next.",
+    imageCaption: 'The guided waitlist decision, "What matters most to Bryanna?", with clear session-vs-session-option requirement handling.',
+    solution: "A restructured waitlist flow that replaced a confusing decision point with a guided two-path model and clearer requirement handling, so a registrant with a waitlisted dependent always knows what to do next.",
     solutionPoints: [
       "Waitlist ambiguity resolved into a legible two-path flow with explicit requirement handling.",
       "Reassurance-focused copy for time-sensitive queue and waiting states.",
@@ -368,19 +368,19 @@ window.PROJECTS = [
     thumbIcon: "shield-check",
     tag: "Security",
     title: "Authentication & Security Recovery",
-    blurb: "Designing recoverable moments in high-anxiety login and security flows \u2014 solving the real problem, not just the symptom.",
-    discipline: "Where security infrastructure and UX intersect \u2014 designing calm, recoverable moments in high-anxiety flows.",
+    blurb: "Designing recoverable moments in high-anxiety login and security flows, solving the real problem, not just the symptom.",
+    discipline: "Where security infrastructure and UX intersect, designing calm, recoverable moments in high-anxiety flows.",
     role: "Product Designer",
     context: "Figma \xB7 Authentication \xB7 Security",
     constraints: ["High-anxiety failure states", "Infrastructure-driven constraints", "Lockout & escalation risk", "Detection vs. prevention tradeoffs", "PCI compliance for password resets"],
     accent: "var(--color-sky)",
     image: "assets/proj-auth-security.jpeg",
-    imageCaption: 'Email verification recovery \u2014 a clear "Account Verified" confirmation guiding registrants straight back to sign-in.',
-    solution: "A set of recovery-focused designs across authentication and security \u2014 starting from the insight that login failures are not always credential errors, and that infrastructure decisions have direct user-facing consequences.",
+    imageCaption: 'Email verification recovery, a clear "Account Verified" confirmation guiding registrants straight back to sign-in.',
+    solution: "A set of recovery-focused designs across authentication and security, starting from the insight that login failures are not always credential errors, and that infrastructure decisions have direct user-facing consequences.",
     solutionPoints: [
-      'A "Wrong URL?" recovery prompt for users in the wrong environment \u2014 solving the real problem, not just the credential symptom.',
+      'A "Wrong URL?" recovery prompt for users in the wrong environment, solving the real problem, not just the credential symptom.',
       "MFA setup fixes for missing controls and formatting issues, reducing lockout risk and support escalations.",
-      "Research into firewall detection-vs-prevention mode and its user-facing implications \u2014 false positives, blocked access.",
+      "Research into firewall detection-vs-prevention mode and its user-facing implications, false positives, blocked access.",
       "Automated account locking based on fraud-risk signals, paired with manual tools for support staff to block or reactivate accounts.",
       "Identity verification built into the password-reset flow, aligned with PCI compliance requirements."
     ],
@@ -388,7 +388,7 @@ window.PROJECTS = [
       { who: "The User", sub: "Locked out", t: "Login failures were treated as credential errors even when the real issue was being in the wrong environment." },
       { who: "The User", sub: "MFA setup", t: "Missing controls and formatting issues in multi-factor setup increased lockout risk." },
       { who: "The Business", sub: "", t: "Shifting a security system from detection to prevention risked false positives and blocked legitimate access." },
-      { who: "The Business", sub: "Fraud risk", t: "Compromised or suspicious accounts needed fast, automatic locking based on fraud signals \u2014 with no reliable manual path to block or reactivate accounts when automation wasn\u2019t enough." },
+      { who: "The Business", sub: "Fraud risk", t: "Compromised or suspicious accounts needed fast, automatic locking based on fraud signals, with no reliable manual path to block or reactivate accounts when automation wasn\u2019t enough." },
       { who: "The User", sub: "Password reset", t: "Password resets lacked strong identity verification and PCI-aligned handling, creating both a security gap and compliance risk." }
     ],
     success: [
@@ -399,7 +399,7 @@ window.PROJECTS = [
       "Password resets that meet PCI compliance without adding user friction."
     ],
     process: [
-      "Reframed login failure as more than a credential problem \u2014 identifying the wrong-environment case.",
+      "Reframed login failure as more than a credential problem, identifying the wrong-environment case.",
       "Designed a recovery path prompting users who reached the wrong URL.",
       "Fixed missing controls and formatting gaps in multi-factor setup.",
       "Investigated the user-facing implications of moving a firewall from detection to prevention mode.",
@@ -415,22 +415,22 @@ window.PROJECTS = [
       "Password resets now meet PCI compliance with stronger identity verification."
     ],
     challenge: "Designing calm, recoverable experiences on top of security infrastructure that is not primarily built around the user.",
-    takeaway: "Security and UX are not opposites. The best recovery designs solve the real problem behind a failure \u2014 often an infrastructure or environment issue \u2014 rather than just the symptom the user first sees."
+    takeaway: "Security and UX are not opposites. The best recovery designs solve the real problem behind a failure, often an infrastructure or environment issue, rather than just the symptom the user first sees."
   },
   {
     id: "forms-strategy",
     thumbIcon: "file-check-2",
     tag: "Strategy",
     title: "Forms & Staff Workflow Strategy",
-    blurb: "A structured evaluation of form and e-signature tooling \u2014 and a clearer source-of-truth model for staff form data.",
-    discipline: "Strategic, systems-level solution design and vendor evaluation for internal tooling \u2014 analyzing downstream operational impact, not just features.",
+    blurb: "A structured evaluation of form and e-signature tooling, and a clearer source-of-truth model for staff form data.",
+    discipline: "Strategic, systems-level solution design and vendor evaluation for internal tooling, analyzing downstream operational impact, not just features.",
     role: "Product Designer \xB7 Solution Design",
     context: "Vendor evaluation \xB7 Systems design \xB7 Integration",
     constraints: ["Fragmentation risk across tools", "Iframe integration limits", "API sync requirements", "Real staff application volume"],
     accent: "var(--color-teal)",
     image: "assets/proj-forms-strategy.jpeg",
-    imageCaption: "Client volume by band \u2014 the real usage data behind the tooling and workflow strategy recommendation.",
-    solution: "A structured evaluation of digital form and e-signature tools \u2014 assessed not as a feature comparison but as an analysis of downstream operational impact \u2014 paired with a clearer model for the source of truth for staff form data.",
+    imageCaption: "Client volume by band, the real usage data behind the tooling and workflow strategy recommendation.",
+    solution: "A structured evaluation of digital form and e-signature tools, assessed not as a feature comparison but as an analysis of downstream operational impact, paired with a clearer model for the source of truth for staff form data.",
     solutionPoints: [
       "Tools evaluated against configurability, embedded experience, integration approach, and data synchronization.",
       'A defined "source of truth" model addressing fragmentation across configuration, capture, and sync.',
@@ -458,22 +458,22 @@ window.PROJECTS = [
       "Strategy connected directly to real usage and technical reality."
     ],
     challenge: "Evaluating tooling for long-term operational impact and data integrity, not just the strongest feature demo.",
-    takeaway: "Solution design is UX. Choosing where data lives and how tools integrate shapes the staff experience as much as any screen \u2014 and getting it right prevents fragmentation before it starts."
+    takeaway: "Solution design is UX. Choosing where data lives and how tools integrate shapes the staff experience as much as any screen, and getting it right prevents fragmentation before it starts."
   },
   {
     id: "outbox",
     thumbIcon: "send",
     tag: "Communication",
-    title: "Outbox \u2014 Client Communications Tool",
+    title: "Outbox, Client Communications Tool",
     blurb: "Faster scanning and clearer status for the tool staff use to send and track communications to the people they serve.",
-    discipline: "Staff-facing tooling whose improvements directly shape the client-facing communication experience \u2014 usability with downstream customer impact.",
+    discipline: "Staff-facing tooling whose improvements directly shape the client-facing communication experience, usability with downstream customer impact.",
     role: "Product Designer",
     context: "Figma \xB7 Staff tooling \xB7 Reporting",
     constraints: ["High volume of outgoing communications", "Staff usability \u2194 customer impact", "Status legibility (sent/pending/failed)", "Reporting & visibility needs"],
     accent: "var(--color-sage)",
     image: "assets/proj-outbox.jpeg",
-    imageCaption: "Outbox records \u2014 searchable, filterable outgoing communications with instantly legible sent/paused/scheduled status.",
-    solution: "A redesign of the Outbox \u2014 the interface staff use to send and track communications to registrants \u2014 improving how large volumes of outgoing messages are scanned, acted on, and verified, with clearer status and a path toward reporting.",
+    imageCaption: "Outbox records, searchable, filterable outgoing communications with instantly legible sent/paused/scheduled status.",
+    solution: "A redesign of the Outbox, the interface staff use to send and track communications to registrants, improving how large volumes of outgoing messages are scanned, acted on, and verified, with clearer status and a path toward reporting.",
     solutionPoints: [
       "Header, table rows, and action dropdowns reworked so staff scan and act on volume faster.",
       "Progress and status indicators redesigned so sent, pending, and failed states are instantly legible.",
@@ -493,7 +493,7 @@ window.PROJECTS = [
       "Reworked the Outbox header, table rows, and action dropdowns for faster scanning.",
       "Redesigned progress and status indicators for clear delivery state.",
       "Improved the individual message-viewing experience.",
-      "Contributed to reporting research \u2014 extending the work into communication-activity visibility over time."
+      "Contributed to reporting research, extending the work into communication-activity visibility over time."
     ],
     impact: [
       "Faster, less error-prone handling of high communication volume.",
@@ -501,26 +501,26 @@ window.PROJECTS = [
       "Better staff tooling improves the client-facing communication experience directly."
     ],
     challenge: 'Making a "boring but critical" internal tool measurably better while keeping the downstream customer impact in view.',
-    takeaway: "Staff-facing tools are customer-facing by proxy. Improving how a team sends and tracks communications changes what people actually receive \u2014 internal usability and external experience are the same problem."
+    takeaway: "Staff-facing tools are customer-facing by proxy. Improving how a team sends and tracks communications changes what people actually receive, internal usability and external experience are the same problem."
   },
   {
     id: "ai-leadership",
     thumbIcon: "sparkles",
     tag: "AI Leadership",
     title: "Leading AI Adoption Across Product Teams",
-    blurb: "Moving three product teams from AI-skeptical to AI-fluent \u2014 leading organizational change in how teams work, not just an artifact.",
-    discipline: "Leading responsible, mature AI adoption across product teams \u2014 organizational change and process redesign, grounded in firsthand practice.",
+    blurb: "Moving three product teams from AI-skeptical to AI-fluent, leading organizational change in how teams work, not just an artifact.",
+    discipline: "Leading responsible, mature AI adoption across product teams, organizational change and process redesign, grounded in firsthand practice.",
     role: "AI Transformation Lead \xB7 Product Designer",
     context: "Enablement \xB7 SDLC redesign \xB7 Change management",
     constraints: ["AI-skeptical starting point", "Responsible, embedded use over novelty", "Cross-team, cross-brand differences", "Adoption as behavior change, not a one-off"],
     accent: "var(--color-teal)",
     image: "assets/proj-ai-leadership.jpeg",
-    imageCaption: "A custom Claude Code skill built to scope and audit feature conversions \u2014 AI embedded directly into the design workflow.",
-    solution: "A dual role as both trainer and practitioner \u2014 guiding three product teams from limited or skeptical AI use to confident, embedded adoption, while applying AI-native workflows to my own product work so the guidance stayed grounded in firsthand use.",
+    imageCaption: "A custom Claude Code skill built to scope and audit feature conversions, AI embedded directly into the design workflow.",
+    solution: "A dual role as both trainer and practitioner, guiding three product teams from limited or skeptical AI use to confident, embedded adoption, while applying AI-native workflows to my own product work so the guidance stayed grounded in firsthand use.",
     solutionPoints: [
-      "Three product teams moved end-to-end from AI-skeptical to AI-fluent \u2014 a genuine behavior-change outcome.",
+      "Three product teams moved end-to-end from AI-skeptical to AI-fluent, a genuine behavior-change outcome.",
       "AI-assisted SDLC redesign: stronger acceptance criteria, clearer triage, milestone and roadmap structure, and a connected documentation hub.",
-      "An AI-assisted workflow that drafts requirements from existing story, business-case, and delivery context \u2014 cutting documentation overhead."
+      "An AI-assisted workflow that drafts requirements from existing story, business-case, and delivery context, cutting documentation overhead."
     ],
     problems: [
       { who: "Product Teams", sub: "", t: "Limited or skeptical AI use meant teams were not seeing where it could meaningfully improve their work." },
@@ -529,13 +529,13 @@ window.PROJECTS = [
     ],
     success: [
       "Teams confidently embedding AI into day-to-day workflows.",
-      "A more legible SDLC \u2014 testable stories, clearer priorities, connected docs.",
+      "A more legible SDLC, testable stories, clearer priorities, connected docs.",
       "Responsible use focused on better outcomes, not AI for its own sake."
     ],
     process: [
       "Held a dual trainer and practitioner role so guidance was grounded in firsthand AI-native work.",
       "Trained three product teams end-to-end from skeptical to fluent AI use.",
-      "Translated a process-improvement roadmap into practical, AI-assisted workflow changes \u2014 acceptance criteria, triage models, milestone structure, and a connected documentation hub.",
+      "Translated a process-improvement roadmap into practical, AI-assisted workflow changes, acceptance criteria, triage models, milestone structure, and a connected documentation hub.",
       "Shaped an AI-assisted workflow drafting requirements from existing story, business-case, and delivery context.",
       "Ran recurring feedback and adoption check-ins, feeding friction points back into the rollout."
     ],
@@ -545,25 +545,25 @@ window.PROJECTS = [
       "A clearer, more testable delivery process with connected context.",
       "Enablement recommendations that generalize across teams and brands."
     ],
-    challenge: "Driving responsible, embedded AI adoption as real behavior change \u2014 across teams with different workflows \u2014 rather than a one-time training event.",
-    takeaway: "Leading AI adoption is change management, not tooling. Pairing hands-on practice with training, feedback loops, and process redesign is what moves teams from skeptical to fluent \u2014 and keeps the focus on better outcomes over novelty."
+    challenge: "Driving responsible, embedded AI adoption as real behavior change, across teams with different workflows, rather than a one-time training event.",
+    takeaway: "Leading AI adoption is change management, not tooling. Pairing hands-on practice with training, feedback loops, and process redesign is what moves teams from skeptical to fluent, and keeps the focus on better outcomes over novelty."
   },
   {
     id: "research-documentation",
     thumbIcon: "search",
     tag: "Research & Practice",
     title: "Research, Analysis & Documentation",
-    blurb: "Using data synthesis and clear writing to move from raw backlog to actionable insight \u2014 the connective tissue beneath the case studies.",
-    discipline: "Using data and writing to drive product decisions \u2014 grounding design in behavior, and turning institutional knowledge into reusable team resources.",
+    blurb: "Using data synthesis and clear writing to move from raw backlog to actionable insight, the connective tissue beneath the case studies.",
+    discipline: "Using data and writing to drive product decisions, grounding design in behavior, and turning institutional knowledge into reusable team resources.",
     role: "Product Designer \xB7 Research",
     context: "Data analysis \xB7 Component audits \xB7 Documentation",
     constraints: ["Large, noisy request backlogs", "Assumption-driven decisions", "UI & design-system fragmentation", "Scattered institutional knowledge"],
     accent: "var(--color-teal)",
     image: "assets/proj-research-documentation.jpeg",
-    imageCaption: "A searchable internal knowledge base of documented issues, tagged and filterable \u2014 institutional knowledge turned into a reusable resource.",
-    solution: "The research, analysis, and documentation practice underpinning the case studies \u2014 synthesizing user requests into themes, grounding decisions in real usage, auditing UI for inconsistency, and turning institutional knowledge into reusable resources.",
+    imageCaption: "A searchable internal knowledge base of documented issues, tagged and filterable, institutional knowledge turned into a reusable resource.",
+    solution: "The research, analysis, and documentation practice underpinning the case studies, synthesizing user requests into themes, grounding decisions in real usage, auditing UI for inconsistency, and turning institutional knowledge into reusable resources.",
     solutionPoints: [
-      "Large sets of user requests synthesized into pain-point themes \u2014 from raw backlog to actionable insight.",
+      "Large sets of user requests synthesized into pain-point themes, from raw backlog to actionable insight.",
       "Component and filter audits surfacing UI inconsistency and design-system fragmentation.",
       "Internal documentation for administration, security resets, onboarding, and design-role expectations."
     ],
@@ -605,7 +605,7 @@ window.SPOKES = [
     label: "Financial Systems",
     sub: "Trust, accuracy & billing",
     icon: "landmark",
-    blurb: "Statements, reconciliation, donations, and refunds \u2014 where accuracy, traceability, and reversibility are what build trust.",
+    blurb: "Statements, reconciliation, donations, and refunds, where accuracy, traceability, and reversibility are what build trust.",
     projectIds: ["merchant-statements", "fundraising-payments"],
     expertise: ["Financial Systems & Payments"]
   },
@@ -614,7 +614,7 @@ window.SPOKES = [
     label: "High-Stakes Journeys",
     sub: "Registration & security",
     icon: "gauge",
-    blurb: "High-volume, time-sensitive journeys \u2014 queueing, registration, and security recovery \u2014 kept calm and usable under pressure.",
+    blurb: "High-volume, time-sensitive journeys, queueing, registration, and security recovery, kept calm and usable under pressure.",
     projectIds: ["queueing-system", "registration-mobile", "waitlist-decision", "auth-security"],
     expertise: ["Performance & High-Stakes UX"]
   },
@@ -623,7 +623,7 @@ window.SPOKES = [
     label: "Operational Workflows",
     sub: "Client tools & staff operations",
     icon: "megaphone",
-    blurb: "The tools our clients rely on to manage hiring, communications, and service operations \u2014 clear, legible, and built for real workload.",
+    blurb: "The tools our clients rely on to manage hiring, communications, and service operations, clear, legible, and built for real workload.",
     projectIds: ["forms-strategy", "outbox"],
     expertise: ["Client Communication & Workflow Tooling"]
   },
@@ -632,7 +632,7 @@ window.SPOKES = [
     label: "Product Platforms",
     sub: "Design systems & leadership",
     icon: "layout-grid",
-    blurb: "Design systems, AI adoption, and research infrastructure \u2014 creating clarity, consistency, and a better delivery rhythm across product teams.",
+    blurb: "Design systems, AI adoption, and research infrastructure, creating clarity, consistency, and a better delivery rhythm across product teams.",
     projectIds: ["design-system", "ai-leadership", "research-documentation"],
     expertise: ["AI Transformation Leadership", "Accessible Design Systems", "Research, Analysis & Documentation"]
   },
@@ -1408,7 +1408,7 @@ function AboutPanel({ open, onClose }) {
   }, [open]);
   if (!open) return null;
   const P = window.PROFILE;
-  return /* @__PURE__ */ React.createElement("div", { className: "ab-overlay", onClick: onClose }, /* @__PURE__ */ React.createElement("style", null, AB_CSS), /* @__PURE__ */ React.createElement("div", { className: "ab-sheet", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement("button", { className: "ab-x", "aria-label": "Close", onClick: onClose }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "x" })), /* @__PURE__ */ React.createElement("div", { className: "ab-hero" }, /* @__PURE__ */ React.createElement("img", { src: "assets/headshot.png", alt: P.name }), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "ov" }, "About me"), /* @__PURE__ */ React.createElement("h2", null, P.name), /* @__PURE__ */ React.createElement("div", { className: "role" }, P.role, " \xB7 ", P.location), /* @__PURE__ */ React.createElement("div", { className: "ab-spec" }, P.specialties.map((s) => /* @__PURE__ */ React.createElement("span", { key: s }, s))))), /* @__PURE__ */ React.createElement("div", { className: "ab-body" }, /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "How I work")), /* @__PURE__ */ React.createElement("p", { className: "ab-p" }, "I'm a product design leader specialized in complex systems \u2014 financial workflows, payments, registration, and accessible platforms at scale. My favorite problems sit where legacy constraints, real data, and human needs collide, and my job is to make the result feel clear, accurate, and trustworthy."), /* @__PURE__ */ React.createElement("p", { className: "ab-p" }, "I work end to end and beyond the interface: research and flow mapping, design systems and accessibility, SQL and API alignment, prototyping in code, and the project management that keeps non-technical and engineering teams moving together. Increasingly, that means reshaping how design and delivery happen with AI \u2014 without losing rigor.")), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Expertise")), /* @__PURE__ */ React.createElement("div", { className: "ab-exp-grid" }, window.EXPERTISE.map((e) => /* @__PURE__ */ React.createElement("div", { key: e.h, className: "ab-exp" }, /* @__PURE__ */ React.createElement("div", { className: "eico" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": e.icon })), /* @__PURE__ */ React.createElement("h4", null, e.h), /* @__PURE__ */ React.createElement("p", null, e.p))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Skills")), /* @__PURE__ */ React.createElement("div", { className: "ab-skills" }, window.SKILLS.map((g) => /* @__PURE__ */ React.createElement("div", { key: g.h }, /* @__PURE__ */ React.createElement("div", { className: "ab-skill-h" }, g.h), /* @__PURE__ */ React.createElement("div", { className: "ab-pills" }, g.items.map((s) => /* @__PURE__ */ React.createElement("span", { key: s, className: "ab-pill" }, s))))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Experience")), window.CAREER.map((c) => /* @__PURE__ */ React.createElement("div", { key: c.company, className: "ab-timeline" }, /* @__PURE__ */ React.createElement("div", { className: "ab-company" }, /* @__PURE__ */ React.createElement("h4", null, c.company), /* @__PURE__ */ React.createElement("div", { className: "meta" }, c.location, " \xB7 ", c.span)), c.roles.map((r) => /* @__PURE__ */ React.createElement("div", { key: r.title, className: "ab-role" + (r.current ? " current" : "") }, /* @__PURE__ */ React.createElement("h5", null, r.title), /* @__PURE__ */ React.createElement("div", { className: "per" }, r.period), /* @__PURE__ */ React.createElement("div", { className: "sk" }, r.skills)))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Get in touch")), /* @__PURE__ */ React.createElement("div", { className: "ab-contact" }, /* @__PURE__ */ React.createElement("a", { className: "ab-ch", href: `mailto:${P.email}` }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "mail" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Email"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.email))), /* @__PURE__ */ React.createElement("a", { className: "ab-ch", href: P.linkedinUrl, target: "_blank", rel: "noopener noreferrer" }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "linkedin" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "LinkedIn"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.linkedin))), /* @__PURE__ */ React.createElement("div", { className: "ab-ch", style: { cursor: "default" } }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "map-pin" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Location"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.location))), /* @__PURE__ */ React.createElement("div", { className: "ab-ch", style: { cursor: "default" } }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "briefcase" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Currently"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, "Product Designer, AI Transformation Lead"))))))));
+  return /* @__PURE__ */ React.createElement("div", { className: "ab-overlay", onClick: onClose }, /* @__PURE__ */ React.createElement("style", null, AB_CSS), /* @__PURE__ */ React.createElement("div", { className: "ab-sheet", onClick: (e) => e.stopPropagation() }, /* @__PURE__ */ React.createElement("button", { className: "ab-x", "aria-label": "Close", onClick: onClose }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "x" })), /* @__PURE__ */ React.createElement("div", { className: "ab-hero" }, /* @__PURE__ */ React.createElement("img", { src: "assets/headshot.png", alt: P.name }), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "ov" }, "About me"), /* @__PURE__ */ React.createElement("h2", null, P.name), /* @__PURE__ */ React.createElement("div", { className: "role" }, P.role, " \xB7 ", P.location), /* @__PURE__ */ React.createElement("div", { className: "ab-spec" }, P.specialties.map((s) => /* @__PURE__ */ React.createElement("span", { key: s }, s))))), /* @__PURE__ */ React.createElement("div", { className: "ab-body" }, /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "How I work")), /* @__PURE__ */ React.createElement("p", { className: "ab-p" }, "I'm a product design leader specialized in complex systems, financial workflows, payments, registration, and accessible platforms at scale. My favorite problems sit where legacy constraints, real data, and human needs collide, and my job is to make the result feel clear, accurate, and trustworthy."), /* @__PURE__ */ React.createElement("p", { className: "ab-p" }, "I work end to end and beyond the interface: research and flow mapping, design systems and accessibility, SQL and API alignment, prototyping in code, and the project management that keeps non-technical and engineering teams moving together. Increasingly, that means reshaping how design and delivery happen with AI, without losing rigor.")), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Expertise")), /* @__PURE__ */ React.createElement("div", { className: "ab-exp-grid" }, window.EXPERTISE.map((e) => /* @__PURE__ */ React.createElement("div", { key: e.h, className: "ab-exp" }, /* @__PURE__ */ React.createElement("div", { className: "eico" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": e.icon })), /* @__PURE__ */ React.createElement("h4", null, e.h), /* @__PURE__ */ React.createElement("p", null, e.p))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Skills")), /* @__PURE__ */ React.createElement("div", { className: "ab-skills" }, window.SKILLS.map((g) => /* @__PURE__ */ React.createElement("div", { key: g.h }, /* @__PURE__ */ React.createElement("div", { className: "ab-skill-h" }, g.h), /* @__PURE__ */ React.createElement("div", { className: "ab-pills" }, g.items.map((s) => /* @__PURE__ */ React.createElement("span", { key: s, className: "ab-pill" }, s))))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Experience")), window.CAREER.map((c) => /* @__PURE__ */ React.createElement("div", { key: c.company, className: "ab-timeline" }, /* @__PURE__ */ React.createElement("div", { className: "ab-company" }, /* @__PURE__ */ React.createElement("h4", null, c.company), /* @__PURE__ */ React.createElement("div", { className: "meta" }, c.location, " \xB7 ", c.span)), c.roles.map((r) => /* @__PURE__ */ React.createElement("div", { key: r.title, className: "ab-role" + (r.current ? " current" : "") }, /* @__PURE__ */ React.createElement("h5", null, r.title), /* @__PURE__ */ React.createElement("div", { className: "per" }, r.period), /* @__PURE__ */ React.createElement("div", { className: "sk" }, r.skills)))))), /* @__PURE__ */ React.createElement("section", { className: "ab-sec" }, /* @__PURE__ */ React.createElement("div", { className: "ab-lbl" }, /* @__PURE__ */ React.createElement("b", null, "Get in touch")), /* @__PURE__ */ React.createElement("div", { className: "ab-contact" }, /* @__PURE__ */ React.createElement("a", { className: "ab-ch", href: `mailto:${P.email}` }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "mail" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Email"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.email))), /* @__PURE__ */ React.createElement("a", { className: "ab-ch", href: P.linkedinUrl, target: "_blank", rel: "noopener noreferrer" }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "linkedin" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "LinkedIn"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.linkedin))), /* @__PURE__ */ React.createElement("div", { className: "ab-ch", style: { cursor: "default" } }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "map-pin" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Location"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, P.location))), /* @__PURE__ */ React.createElement("div", { className: "ab-ch", style: { cursor: "default" } }, /* @__PURE__ */ React.createElement("span", { className: "ciw" }, /* @__PURE__ */ React.createElement("i", { "data-lucide": "briefcase" })), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "cl" }, "Currently"), /* @__PURE__ */ React.createElement("span", { className: "cv" }, "Product Designer, AI Transformation Lead"))))))));
 }
 Object.assign(window, { AboutPanel });
 

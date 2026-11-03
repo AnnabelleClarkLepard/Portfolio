@@ -1,4 +1,4 @@
-/* AboutPanel.jsx — full "About me" overlay opened from the center photo.
+/* AboutPanel.jsx, full "About me" overlay opened from the center photo.
    Bio · Expertise (6) · Skills · Career timeline · Contact. */
 
 const AB_CSS = `
@@ -125,7 +125,7 @@ function AboutPanel({ open, onClose }) {
           <section className="ab-sec">
             <div className="ab-lbl"><b>How I work</b></div>
             <p className="ab-p">
-              I'm a product design leader specialized in complex systems — financial workflows,
+              I'm a product design leader specialized in complex systems, financial workflows,
               payments, registration, and accessible platforms at scale. My favorite problems sit
               where legacy constraints, real data, and human needs collide, and my job is to make
               the result feel clear, accurate, and trustworthy.
@@ -134,7 +134,7 @@ function AboutPanel({ open, onClose }) {
               I work end to end and beyond the interface: research and flow mapping, design systems
               and accessibility, SQL and API alignment, prototyping in code, and the project
               management that keeps non-technical and engineering teams moving together. Increasingly,
-              that means reshaping how design and delivery happen with AI — without losing rigor.
+              that means reshaping how design and delivery happen with AI, without losing rigor.
             </p>
           </section>
 

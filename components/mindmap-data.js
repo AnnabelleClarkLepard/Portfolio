@@ -1,4 +1,4 @@
-/* mindmap-data.js — spoke grouping + career history for the mind-map portfolio.
+/* mindmap-data.js, spoke grouping + career history for the mind-map portfolio.
    Reuses window.PROFILE / PROJECTS / EXPERTISE / SKILLS from data.js. */
 
 // Five recruiter-friendly spokes that organize the portfolio around product
@@ -9,7 +9,7 @@ window.SPOKES = [
     label: 'Financial Systems',
     sub: 'Trust, accuracy & billing',
     icon: 'landmark',
-    blurb: 'Statements, reconciliation, donations, and refunds — where accuracy, traceability, and reversibility are what build trust.',
+    blurb: 'Statements, reconciliation, donations, and refunds, where accuracy, traceability, and reversibility are what build trust.',
     projectIds: ['merchant-statements', 'fundraising-payments'],
     expertise: ['Financial Systems & Payments'],
   },
@@ -18,7 +18,7 @@ window.SPOKES = [
     label: 'High-Stakes Journeys',
     sub: 'Registration & security',
     icon: 'gauge',
-    blurb: 'High-volume, time-sensitive journeys — queueing, registration, and security recovery — kept calm and usable under pressure.',
+    blurb: 'High-volume, time-sensitive journeys, queueing, registration, and security recovery, kept calm and usable under pressure.',
     projectIds: ['queueing-system', 'registration-mobile', 'waitlist-decision', 'auth-security'],
     expertise: ['Performance & High-Stakes UX'],
   },
@@ -27,7 +27,7 @@ window.SPOKES = [
     label: 'Operational Workflows',
     sub: 'Client tools & staff operations',
     icon: 'megaphone',
-    blurb: 'The tools our clients rely on to manage hiring, communications, and service operations — clear, legible, and built for real workload.',
+    blurb: 'The tools our clients rely on to manage hiring, communications, and service operations, clear, legible, and built for real workload.',
     projectIds: ['forms-strategy', 'outbox'],
     expertise: ['Client Communication & Workflow Tooling'],
   },
@@ -36,7 +36,7 @@ window.SPOKES = [
     label: 'Product Platforms',
     sub: 'Design systems & leadership',
     icon: 'layout-grid',
-    blurb: 'Design systems, AI adoption, and research infrastructure — creating clarity, consistency, and a better delivery rhythm across product teams.',
+    blurb: 'Design systems, AI adoption, and research infrastructure, creating clarity, consistency, and a better delivery rhythm across product teams.',
     projectIds: ['design-system', 'ai-leadership', 'research-documentation'],
     expertise: ['AI Transformation Leadership', 'Accessible Design Systems', 'Research, Analysis & Documentation'],
   },
