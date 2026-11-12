@@ -9,8 +9,8 @@ window.SPOKES = [
     label: 'Financial Systems',
     sub: 'Trust, accuracy & billing',
     icon: 'landmark',
-    blurb: 'Statements, reconciliation, donations, and refunds where accuracy, traceability, and reversibility build trust.',
-    projectIds: ['merchant-statements', 'fundraising-payments'],
+    blurb: 'Statements, reconciliation, and billing workflows where accuracy and traceability build trust.',
+    projectIds: ['merchant-statements'],
     expertise: ['Financial Systems & Payments'],
   },
   {
@@ -27,8 +27,8 @@ window.SPOKES = [
     label: 'Operational Workflows',
     sub: 'Client tools & staff operations',
     icon: 'megaphone',
-    blurb: 'Client-facing operational tools for hiring, communications, and service work built to stay clear under real workload.',
-    projectIds: ['forms-strategy', 'outbox'],
+    blurb: 'Client-facing operational tools for hiring, communications, recurring bookings, and service work built to stay clear under real workload.',
+    projectIds: ['forms-strategy', 'outbox', 'recurring-bookings-cycle-1'],
     expertise: ['Client Communication & Workflow Tooling'],
   },
   {
